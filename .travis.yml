@@ -1,6 +1,6 @@
 language: objective-c
 osx_image: xcode7
-before_script:
- - open -a Simulator
 script:
- - xctool -scheme Tests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' test
+  - xcrun instruments -s devices
+# - open -a Simulator
+# - xctool -scheme Tests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' test
