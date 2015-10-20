@@ -1,9 +1,8 @@
 language: objective-c
 osx_image: xcode7
 xcode_sdk: iphonesimulator
-xcode_project: GovData.xcodeproj
 xcode_scheme: GovData
-xctool_args: -destination "OS=9.0,name=iPhone 6s Plus,id=DB7245EA-213E-4F54-8DB8-F449678C90C5"
+xctool_args: -destination "name=iPhone 6s Plus"
 before_script: 
  - open -a Simulator
  - xcrun simctl list devices
