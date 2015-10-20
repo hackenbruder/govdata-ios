@@ -1,8 +1,6 @@
 language: objective-c
 osx_image: xcode7
-script:
- - xcrun instruments -s devices
-# - instruments -w "iPhone 6 (9.0) ["
-# - open -a "Simulator" --args -CurrentDeviceUDID A84965FC-070D-4EAF-83E8-84FFE99F5866
-# - sleep 5
- - xctool -project GovData.xcodeproj -scheme Tests -sdk iphonesimulator -destination "OS=9.0,name=iPhone 6s" clean build test
+xcode_sdk: iphonesimulator
+xcode_project: GovData.xcodeproj
+xcode_scheme: GovData
+xctool_args: -destination 'OS=9.0,name=iPhone 6s'
