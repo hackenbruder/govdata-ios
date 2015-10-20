@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AD87D14F7AAE936319AE789 /* libPods-GovData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A63ED61B4EEE834B5A60C0 /* libPods-GovData.a */; };
+		992A10DB1BBED5C9001D80FC /* GovData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 992A10DA1BBED5C9001D80FC /* GovData.h */; };
+		992A10DD1BBED5C9001D80FC /* GovData.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A10DC1BBED5C9001D80FC /* GovData.m */; };
+		992A10ED1BBED9C3001D80FC /* GovDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A10EC1BBED9C3001D80FC /* GovDataTests.m */; };
+		992A10EF1BBED9C3001D80FC /* libGovData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A10D71BBED5C9001D80FC /* libGovData.a */; };
+		9960A3711BC4C3DA00F22D9D /* GovData.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9960A3701BC4C3DA00F22D9D /* GovData.strings */; };
+		99647D301BC3FFC60033EDB1 /* GDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 99647D2F1BC3FFC60033EDB1 /* GDError.m */; };
+		9974BB0D1BD42B7A0084FF12 /* GDErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9974BB0C1BD42B7A0084FF12 /* GDErrorTests.m */; };
+		9974BB0F1BD446FD0084FF12 /* GDEntityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9974BB0E1BD446FC0084FF12 /* GDEntityTests.m */; };
+		9974BB141BD488000084FF12 /* GDVATTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9974BB131BD488000084FF12 /* GDVATTests.m */; };
+		9974BB161BD4A2160084FF12 /* GDAccountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9974BB151BD4A2160084FF12 /* GDAccountTests.m */; };
+		9982A6DC1BCEA20800512C8E /* GDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982A6DB1BCEA20800512C8E /* GDHelpers.m */; };
+		9982A6E11BCEA7F000512C8E /* GDVAT.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982A6E01BCEA7F000512C8E /* GDVAT.m */; };
+		99E3BEAC1BCCA7D0003811B2 /* GDEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E3BEAB1BCCA7D0003811B2 /* GDEntity.m */; };
+		99EED23D1BD2BB200085A7AD /* GDAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EED23C1BD2BB200085A7AD /* GDAccount.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		992A10F01BBED9C3001D80FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992A10CF1BBED5C9001D80FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 992A10D61BBED5C9001D80FC;
+			remoteInfo = GovData;
+		};
+		99D167391BC0BC8A001C0F8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D167341BC0BC8A001C0F8D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ACC59C233E1269A088F304DC36B4FDFA;
+			remoteInfo = AFNetworking;
+		};
+		99D1673B1BC0BC8A001C0F8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D167341BC0BC8A001C0F8D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 109D242676C42D25909088876D5CDB23;
+			remoteInfo = "Pods-GovData";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		992A10D51BBED5C9001D80FC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				992A10DB1BBED5C9001D80FC /* GovData.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F829637E85718F97B820BE2 /* Pods-GovData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GovData.release.xcconfig"; path = "Pods/Target Support Files/Pods-GovData/Pods-GovData.release.xcconfig"; sourceTree = "<group>"; };
+		6E4972AF0D8BAFEABE9A3069 /* Pods-GovData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GovData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GovData/Pods-GovData.debug.xcconfig"; sourceTree = "<group>"; };
+		992A10D71BBED5C9001D80FC /* libGovData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGovData.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		992A10DA1BBED5C9001D80FC /* GovData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GovData.h; sourceTree = "<group>"; };
+		992A10DC1BBED5C9001D80FC /* GovData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GovData.m; sourceTree = "<group>"; };
+		992A10EA1BBED9C3001D80FC /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		992A10EC1BBED9C3001D80FC /* GovDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GovDataTests.m; sourceTree = "<group>"; };
+		992A10EE1BBED9C3001D80FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9960A3701BC4C3DA00F22D9D /* GovData.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = GovData.strings; sourceTree = "<group>"; };
+		99647D2E1BC3FFC60033EDB1 /* GDError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDError.h; sourceTree = "<group>"; };
+		99647D2F1BC3FFC60033EDB1 /* GDError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDError.m; sourceTree = "<group>"; };
+		9974BB0C1BD42B7A0084FF12 /* GDErrorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDErrorTests.m; sourceTree = "<group>"; };
+		9974BB0E1BD446FC0084FF12 /* GDEntityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDEntityTests.m; sourceTree = "<group>"; };
+		9974BB131BD488000084FF12 /* GDVATTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDVATTests.m; sourceTree = "<group>"; };
+		9974BB151BD4A2160084FF12 /* GDAccountTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDAccountTests.m; sourceTree = "<group>"; };
+		9982A6DA1BCEA20800512C8E /* GDHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDHelpers.h; sourceTree = "<group>"; };
+		9982A6DB1BCEA20800512C8E /* GDHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDHelpers.m; sourceTree = "<group>"; };
+		9982A6DF1BCEA7F000512C8E /* GDVAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDVAT.h; sourceTree = "<group>"; };
+		9982A6E01BCEA7F000512C8E /* GDVAT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDVAT.m; sourceTree = "<group>"; };
+		99D167321BC0BA8C001C0F8D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		99D167341BC0BC8A001C0F8D /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		99E3BEAA1BCCA7D0003811B2 /* GDEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDEntity.h; sourceTree = "<group>"; };
+		99E3BEAB1BCCA7D0003811B2 /* GDEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDEntity.m; sourceTree = "<group>"; };
+		99EED23B1BD2BB200085A7AD /* GDAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDAccount.h; sourceTree = "<group>"; };
+		99EED23C1BD2BB200085A7AD /* GDAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDAccount.m; sourceTree = "<group>"; };
+		B6A63ED61B4EEE834B5A60C0 /* libPods-GovData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GovData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		992A10D41BBED5C9001D80FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD87D14F7AAE936319AE789 /* libPods-GovData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992A10E71BBED9C3001D80FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992A10EF1BBED9C3001D80FC /* libGovData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E92F980DEA4F3D559BB66E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6A63ED61B4EEE834B5A60C0 /* libPods-GovData.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C31CD59B33FC06463CE8987 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E4972AF0D8BAFEABE9A3069 /* Pods-GovData.debug.xcconfig */,
+				0F829637E85718F97B820BE2 /* Pods-GovData.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		992A10CE1BBED5C9001D80FC = {
+			isa = PBXGroup;
+			children = (
+				99D167341BC0BC8A001C0F8D /* Pods.xcodeproj */,
+				99D167321BC0BA8C001C0F8D /* Podfile */,
+				9960A3701BC4C3DA00F22D9D /* GovData.strings */,
+				992A10D91BBED5C9001D80FC /* GovData */,
+				992A10EB1BBED9C3001D80FC /* Tests */,
+				992A10D81BBED5C9001D80FC /* Products */,
+				8C31CD59B33FC06463CE8987 /* Pods */,
+				7E92F980DEA4F3D559BB66E2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		992A10D81BBED5C9001D80FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				992A10D71BBED5C9001D80FC /* libGovData.a */,
+				992A10EA1BBED9C3001D80FC /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		992A10D91BBED5C9001D80FC /* GovData */ = {
+			isa = PBXGroup;
+			children = (
+				99E3BEAA1BCCA7D0003811B2 /* GDEntity.h */,
+				99E3BEAB1BCCA7D0003811B2 /* GDEntity.m */,
+				992A10DA1BBED5C9001D80FC /* GovData.h */,
+				992A10DC1BBED5C9001D80FC /* GovData.m */,
+				99647D2E1BC3FFC60033EDB1 /* GDError.h */,
+				99647D2F1BC3FFC60033EDB1 /* GDError.m */,
+				9982A6DA1BCEA20800512C8E /* GDHelpers.h */,
+				9982A6DB1BCEA20800512C8E /* GDHelpers.m */,
+				9982A6DF1BCEA7F000512C8E /* GDVAT.h */,
+				9982A6E01BCEA7F000512C8E /* GDVAT.m */,
+				99EED23B1BD2BB200085A7AD /* GDAccount.h */,
+				99EED23C1BD2BB200085A7AD /* GDAccount.m */,
+			);
+			path = GovData;
+			sourceTree = "<group>";
+		};
+		992A10EB1BBED9C3001D80FC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				992A10EE1BBED9C3001D80FC /* Info.plist */,
+				992A10EC1BBED9C3001D80FC /* GovDataTests.m */,
+				9974BB0C1BD42B7A0084FF12 /* GDErrorTests.m */,
+				9974BB0E1BD446FC0084FF12 /* GDEntityTests.m */,
+				9974BB131BD488000084FF12 /* GDVATTests.m */,
+				9974BB151BD4A2160084FF12 /* GDAccountTests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		99D167351BC0BC8A001C0F8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99D1673A1BC0BC8A001C0F8D /* libAFNetworking.a */,
+				99D1673C1BC0BC8A001C0F8D /* libPods-GovData.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		992A10D61BBED5C9001D80FC /* GovData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992A10E01BBED5C9001D80FC /* Build configuration list for PBXNativeTarget "GovData" */;
+			buildPhases = (
+				6B6ACD3138553ADE2EF41854 /* Check Pods Manifest.lock */,
+				992A10D31BBED5C9001D80FC /* Sources */,
+				992A10D41BBED5C9001D80FC /* Frameworks */,
+				992A10D51BBED5C9001D80FC /* CopyFiles */,
+				19C303E27E83023308139D7D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GovData;
+			productName = GovData;
+			productReference = 992A10D71BBED5C9001D80FC /* libGovData.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		992A10E91BBED9C3001D80FC /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992A10F21BBED9C3001D80FC /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				992A10E61BBED9C3001D80FC /* Sources */,
+				992A10E71BBED9C3001D80FC /* Frameworks */,
+				992A10E81BBED9C3001D80FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				992A10F11BBED9C3001D80FC /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 992A10EA1BBED9C3001D80FC /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		992A10CF1BBED5C9001D80FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = govdata;
+				TargetAttributes = {
+					992A10D61BBED5C9001D80FC = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					992A10E91BBED9C3001D80FC = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 992A10D21BBED5C9001D80FC /* Build configuration list for PBXProject "GovData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 992A10CE1BBED5C9001D80FC;
+			productRefGroup = 992A10D81BBED5C9001D80FC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 99D167351BC0BC8A001C0F8D /* Products */;
+					ProjectRef = 99D167341BC0BC8A001C0F8D /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				992A10D61BBED5C9001D80FC /* GovData */,
+				992A10E91BBED9C3001D80FC /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		99D1673A1BC0BC8A001C0F8D /* libAFNetworking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAFNetworking.a;
+			remoteRef = 99D167391BC0BC8A001C0F8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99D1673C1BC0BC8A001C0F8D /* libPods-GovData.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-GovData.a";
+			remoteRef = 99D1673B1BC0BC8A001C0F8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		992A10E81BBED9C3001D80FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9960A3711BC4C3DA00F22D9D /* GovData.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19C303E27E83023308139D7D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GovData/Pods-GovData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B6ACD3138553ADE2EF41854 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		992A10D31BBED5C9001D80FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EED23D1BD2BB200085A7AD /* GDAccount.m in Sources */,
+				9982A6DC1BCEA20800512C8E /* GDHelpers.m in Sources */,
+				99647D301BC3FFC60033EDB1 /* GDError.m in Sources */,
+				9982A6E11BCEA7F000512C8E /* GDVAT.m in Sources */,
+				99E3BEAC1BCCA7D0003811B2 /* GDEntity.m in Sources */,
+				992A10DD1BBED5C9001D80FC /* GovData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992A10E61BBED9C3001D80FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9974BB141BD488000084FF12 /* GDVATTests.m in Sources */,
+				9974BB0F1BD446FD0084FF12 /* GDEntityTests.m in Sources */,
+				9974BB161BD4A2160084FF12 /* GDAccountTests.m in Sources */,
+				992A10ED1BBED9C3001D80FC /* GovDataTests.m in Sources */,
+				9974BB0D1BD42B7A0084FF12 /* GDErrorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		992A10F11BBED9C3001D80FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 992A10D61BBED5C9001D80FC /* GovData */;
+			targetProxy = 992A10F01BBED9C3001D80FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		992A10DE1BBED5C9001D80FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "Pods/Headers/**";
+			};
+			name = Debug;
+		};
+		992A10DF1BBED5C9001D80FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "$(inherited)";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "Pods/Headers/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		992A10E11BBED5C9001D80FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E4972AF0D8BAFEABE9A3069 /* Pods-GovData.debug.xcconfig */;
+			buildSettings = {
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		992A10E21BBED5C9001D80FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F829637E85718F97B820BE2 /* Pods-GovData.release.xcconfig */;
+			buildSettings = {
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		992A10F31BBED9C3001D80FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E4972AF0D8BAFEABE9A3069 /* Pods-GovData.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.govdata.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		992A10F41BBED9C3001D80FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F829637E85718F97B820BE2 /* Pods-GovData.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.govdata.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		992A10D21BBED5C9001D80FC /* Build configuration list for PBXProject "GovData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992A10DE1BBED5C9001D80FC /* Debug */,
+				992A10DF1BBED5C9001D80FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		992A10E01BBED5C9001D80FC /* Build configuration list for PBXNativeTarget "GovData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992A10E11BBED5C9001D80FC /* Debug */,
+				992A10E21BBED5C9001D80FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		992A10F21BBED9C3001D80FC /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				992A10F31BBED9C3001D80FC /* Debug */,
+				992A10F41BBED9C3001D80FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 992A10CF1BBED5C9001D80FC /* Project object */;
+}
