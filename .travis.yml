@@ -1,8 +1,5 @@
 language: objective-c
 osx_image: xcode7
-before_install:
- - brew update
- - brew upgrade xctool
 script:
  - xcrun instruments -s devices
  - instruments -w "iPhone 6 (9.0) ["
