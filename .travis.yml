@@ -7,4 +7,5 @@ xctool_args: -destination "name=iPhone 6s Plus"
 before_script: 
  - open -a Simulator
  - xcrun simctl list devices
- - xctool -v
+ - xctool -version
+ - xcodebuild -version -sdk
