@@ -1,11 +1,9 @@
 language: objective-c
 osx_image: xcode7
-xcode_sdk: iphonesimulator
-xcode_project: GovData.xcodeproj
-xcode_scheme: GovData
-xctool_args: -destination "name=iPhone 6s Plus"
 before_script: 
  - open -a Simulator
  - xcrun simctl list devices
  - xctool -version
  - xcodebuild -version -sdk
+script:
+ - xctool -showTasks -destination "name=iPhone 6s Plus" -project GovData.xcodeproj -scheme GovData -sdk iphonesimulator build test
