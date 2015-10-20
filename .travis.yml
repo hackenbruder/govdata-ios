@@ -5,4 +5,5 @@ xcode_project: GovData.xcodeproj
 xcode_scheme: GovData
 xctool_args: -destination "OS=9.0,name=iPhone 6s"
 before_script: 
+ - open -a Simulator
  - xcrun simctl list devices
