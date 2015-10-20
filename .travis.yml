@@ -1,5 +1,6 @@
 language: objective-c
 osx_image: xcode7
+xctool_args: -destination 'platform=iOS Simulator,name=iPad 2'
 xcode_sdk: iphonesimulator
 xcode_project: GovData.xcodeproj
 xcode_scheme: GovData
