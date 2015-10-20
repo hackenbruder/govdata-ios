@@ -2,5 +2,7 @@ language: objective-c
 osx_image: xcode7
 script:
  - xcrun instruments -s devices
- - instruments -w "iPhone 6 (9.0) ["
- - xctool -scheme Tests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" test
+# - instruments -w "iPhone 6 (9.0) ["
+ - open -a "iOS Simulator" --args -CurrentDeviceUDID A84965FC-070D-4EAF-83E8-84FFE99F5866
+ - sleep 5
+ - xctool -scheme Tests -sdk iphonesimulator -destination "platform=iOS Simulator,name=A84965FC-070D-4EAF-83E8-84FFE99F5866" test
