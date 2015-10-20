@@ -1,6 +1,9 @@
 language: objective-c
 osx_image: xcode7
+before_install:
+ - brew update
+ - brew upgrade xctool
 script:
-# - xcrun instruments -s devices
- - instruments -w "iPhone 6s (9.0) ["
- - xctool -scheme Tests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6s" test
+ - xcrun instruments -s devices
+ - instruments -w "iPhone 6 (9.0) ["
+ - xctool -scheme Tests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6" test
