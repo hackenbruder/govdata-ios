@@ -5,4 +5,4 @@ script:
 # - instruments -w "iPhone 6 (9.0) ["
  - open -a "Simulator" --args -CurrentDeviceUDID A84965FC-070D-4EAF-83E8-84FFE99F5866
  - sleep 5
- - xctool -scheme Tests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6s" test
+ - xctool -scheme Tests -sdk iphonesimulator -destination "platform=iOS Simulator,OS=9.0,name=iPhone 6s" test
