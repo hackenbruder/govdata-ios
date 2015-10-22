@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 	s.homepage						= 'https://github.com/hackenbruder/govdata-ios'
 	s.platform						= :ios, '8.0'
 	s.license						= { :type => 'MIT', :file => 'LICENSE.md' }
-	s.source						= { :git => 'https://github.com/hackenbruder/govdata-ios.git', :tag => '0.0.1' }
+	s.source						= { :git => 'https://github.com/hackenbruder/govdata-ios.git', :tag => s.version }
 	s.author						= { 'Richard Hackenbruder' => 'hackenbruder@govdata.cz' }
 	s.source_files					= 'GovData/**/*.{h,m}'
 	s.public_header_files			= 'GovData/**/*.h'

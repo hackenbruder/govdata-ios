@@ -81,7 +81,7 @@
 		9982A6DB1BCEA20800512C8E /* GDHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDHelpers.m; sourceTree = "<group>"; };
 		9982A6DF1BCEA7F000512C8E /* GDVAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDVAT.h; sourceTree = "<group>"; };
 		9982A6E01BCEA7F000512C8E /* GDVAT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDVAT.m; sourceTree = "<group>"; };
-		99D167321BC0BA8C001C0F8D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		99D167321BC0BA8C001C0F8D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99D167341BC0BC8A001C0F8D /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		99E3BEAA1BCCA7D0003811B2 /* GDEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDEntity.h; sourceTree = "<group>"; };
 		99E3BEAB1BCCA7D0003811B2 /* GDEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDEntity.m; sourceTree = "<group>"; };

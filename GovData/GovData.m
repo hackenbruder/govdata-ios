@@ -26,7 +26,7 @@
 }
 
 - (void)setHeaders {
-	[_requestManager.requestSerializer setValue:_key forHTTPHeaderField:@"x-api-key"];
+	[_requestManager.requestSerializer setValue:(NSString *)_key forHTTPHeaderField:@"x-api-key"];
 }
 
 - (NSString *)getURL:(const NSString *) method {
