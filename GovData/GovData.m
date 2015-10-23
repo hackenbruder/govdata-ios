@@ -6,6 +6,7 @@
 	self = [self init];
 	_stage = stage;
 	_key = key;
+	[self setHeaders];
 	return self;
 }
 
