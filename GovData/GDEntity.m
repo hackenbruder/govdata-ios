@@ -14,6 +14,11 @@
 		if(vat != nil && [vat isKindOfClass:[NSDictionary class]] && [self hasVAT]) {
 			_vat = [[GDVAT alloc] initWithResponse: vat];
 		}
+		
+		id address = [response objectForKey:@"address"];
+		if(address != nil && [address isKindOfClass:[NSDictionary class]]) {
+			_address = [[GDAddress alloc] initWithResponse: address];
+		}
 	}
 	return self;
 }
@@ -24,6 +29,14 @@
 		return nil;
 	}
 	return _vat;
+}
+
+- (const GDAddress *)address:(const GDError **) error {
+	if(_address == nil) {
+		*error = [GDError createWithCode: GDErrorDataUnavailable];
+		return nil;
+	}
+	return _address;
 }
 
 - (BOOL)hasVAT {

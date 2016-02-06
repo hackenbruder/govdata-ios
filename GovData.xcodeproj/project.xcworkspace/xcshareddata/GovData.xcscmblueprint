@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6A297D919ACBC0020ACD48F47FBCDE46CC06A1B9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6A297D919ACBC0020ACD48F47FBCDE46CC06A1B9" : 0,
+    "1CA3B9B0B0CC99A27FCF546ACB6AA2CBBF830856" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4960F92E-AA00-4E5C-8639-DBAB493D00A4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6A297D919ACBC0020ACD48F47FBCDE46CC06A1B9" : "govdata-ios\/",
+    "1CA3B9B0B0CC99A27FCF546ACB6AA2CBBF830856" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GovData",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "GovData.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/govdata-core\/v1\/repos\/govdata",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1CA3B9B0B0CC99A27FCF546ACB6AA2CBBF830856"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "govdata:hackenbruder\/govdata-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6A297D919ACBC0020ACD48F47FBCDE46CC06A1B9"
+    }
+  ]
+}

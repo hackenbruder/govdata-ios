@@ -18,8 +18,10 @@
 		9974BB0F1BD446FD0084FF12 /* GDEntityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9974BB0E1BD446FC0084FF12 /* GDEntityTests.m */; };
 		9974BB141BD488000084FF12 /* GDVATTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9974BB131BD488000084FF12 /* GDVATTests.m */; };
 		9974BB161BD4A2160084FF12 /* GDAccountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9974BB151BD4A2160084FF12 /* GDAccountTests.m */; };
+		997B50071C65B29A00CC208B /* GDAddressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 997B50061C65B29A00CC208B /* GDAddressTests.m */; };
 		9982A6DC1BCEA20800512C8E /* GDHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982A6DB1BCEA20800512C8E /* GDHelpers.m */; };
 		9982A6E11BCEA7F000512C8E /* GDVAT.m in Sources */ = {isa = PBXBuildFile; fileRef = 9982A6E01BCEA7F000512C8E /* GDVAT.m */; };
+		99E15D091C64F47200CA3D4C /* GDAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E15D081C64F47200CA3D4C /* GDAddress.m */; };
 		99E3BEAC1BCCA7D0003811B2 /* GDEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E3BEAB1BCCA7D0003811B2 /* GDEntity.m */; };
 		99EED23D1BD2BB200085A7AD /* GDAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 99EED23C1BD2BB200085A7AD /* GDAccount.m */; };
 /* End PBXBuildFile section */
@@ -77,12 +79,15 @@
 		9974BB0E1BD446FC0084FF12 /* GDEntityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDEntityTests.m; sourceTree = "<group>"; };
 		9974BB131BD488000084FF12 /* GDVATTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDVATTests.m; sourceTree = "<group>"; };
 		9974BB151BD4A2160084FF12 /* GDAccountTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDAccountTests.m; sourceTree = "<group>"; };
+		997B50061C65B29A00CC208B /* GDAddressTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDAddressTests.m; sourceTree = "<group>"; };
 		9982A6DA1BCEA20800512C8E /* GDHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDHelpers.h; sourceTree = "<group>"; };
 		9982A6DB1BCEA20800512C8E /* GDHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDHelpers.m; sourceTree = "<group>"; };
 		9982A6DF1BCEA7F000512C8E /* GDVAT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDVAT.h; sourceTree = "<group>"; };
 		9982A6E01BCEA7F000512C8E /* GDVAT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDVAT.m; sourceTree = "<group>"; };
 		99D167321BC0BA8C001C0F8D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99D167341BC0BC8A001C0F8D /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		99E15D081C64F47200CA3D4C /* GDAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDAddress.m; sourceTree = "<group>"; };
+		99E15D0C1C64F48D00CA3D4C /* GDAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDAddress.h; sourceTree = "<group>"; };
 		99E3BEAA1BCCA7D0003811B2 /* GDEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDEntity.h; sourceTree = "<group>"; };
 		99E3BEAB1BCCA7D0003811B2 /* GDEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDEntity.m; sourceTree = "<group>"; };
 		99EED23B1BD2BB200085A7AD /* GDAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDAccount.h; sourceTree = "<group>"; };
@@ -165,6 +170,8 @@
 				9982A6E01BCEA7F000512C8E /* GDVAT.m */,
 				99EED23B1BD2BB200085A7AD /* GDAccount.h */,
 				99EED23C1BD2BB200085A7AD /* GDAccount.m */,
+				99E15D0C1C64F48D00CA3D4C /* GDAddress.h */,
+				99E15D081C64F47200CA3D4C /* GDAddress.m */,
 			);
 			path = GovData;
 			sourceTree = "<group>";
@@ -178,6 +185,7 @@
 				9974BB0E1BD446FC0084FF12 /* GDEntityTests.m */,
 				9974BB131BD488000084FF12 /* GDVATTests.m */,
 				9974BB151BD4A2160084FF12 /* GDAccountTests.m */,
+				997B50061C65B29A00CC208B /* GDAddressTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -338,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E15D091C64F47200CA3D4C /* GDAddress.m in Sources */,
 				99EED23D1BD2BB200085A7AD /* GDAccount.m in Sources */,
 				9982A6DC1BCEA20800512C8E /* GDHelpers.m in Sources */,
 				99647D301BC3FFC60033EDB1 /* GDError.m in Sources */,
@@ -356,6 +365,7 @@
 				9974BB161BD4A2160084FF12 /* GDAccountTests.m in Sources */,
 				992A10ED1BBED9C3001D80FC /* GovDataTests.m in Sources */,
 				9974BB0D1BD42B7A0084FF12 /* GDErrorTests.m in Sources */,
+				997B50071C65B29A00CC208B /* GDAddressTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
