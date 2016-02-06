@@ -26,7 +26,7 @@
 }
 
 - (void)test1HasStatus {
-	XCTAssertTrue([[_standard status] integerValue] == GDAddressOK, "Missing address status");
+	XCTAssertTrue([_standard status] == GDAddressOK, "Missing address status");
 }
 
 - (void)test2HasGeoCoords {

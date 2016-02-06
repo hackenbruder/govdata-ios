@@ -12,6 +12,7 @@
 		992A10DD1BBED5C9001D80FC /* GovData.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A10DC1BBED5C9001D80FC /* GovData.m */; };
 		992A10ED1BBED9C3001D80FC /* GovDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A10EC1BBED9C3001D80FC /* GovDataTests.m */; };
 		992A10EF1BBED9C3001D80FC /* libGovData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A10D71BBED5C9001D80FC /* libGovData.a */; };
+		994A743A1C665F5E00C1EC57 /* GDRUIAN.m in Sources */ = {isa = PBXBuildFile; fileRef = 994A74391C665F5E00C1EC57 /* GDRUIAN.m */; };
 		9960A3711BC4C3DA00F22D9D /* GovData.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9960A3701BC4C3DA00F22D9D /* GovData.strings */; };
 		99647D301BC3FFC60033EDB1 /* GDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 99647D2F1BC3FFC60033EDB1 /* GDError.m */; };
 		9974BB0D1BD42B7A0084FF12 /* GDErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9974BB0C1BD42B7A0084FF12 /* GDErrorTests.m */; };
@@ -72,6 +73,9 @@
 		992A10EA1BBED9C3001D80FC /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		992A10EC1BBED9C3001D80FC /* GovDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GovDataTests.m; sourceTree = "<group>"; };
 		992A10EE1BBED9C3001D80FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		994A74391C665F5E00C1EC57 /* GDRUIAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRUIAN.m; sourceTree = "<group>"; };
+		994A743D1C665F7400C1EC57 /* GDRUIAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDRUIAN.h; sourceTree = "<group>"; };
+		994A743E1C6660D500C1EC57 /* GDTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTypes.h; sourceTree = "<group>"; };
 		9960A3701BC4C3DA00F22D9D /* GovData.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = GovData.strings; sourceTree = "<group>"; };
 		99647D2E1BC3FFC60033EDB1 /* GDError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDError.h; sourceTree = "<group>"; };
 		99647D2F1BC3FFC60033EDB1 /* GDError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDError.m; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 		992A10D91BBED5C9001D80FC /* GovData */ = {
 			isa = PBXGroup;
 			children = (
+				994A743E1C6660D500C1EC57 /* GDTypes.h */,
 				99E3BEAA1BCCA7D0003811B2 /* GDEntity.h */,
 				99E3BEAB1BCCA7D0003811B2 /* GDEntity.m */,
 				992A10DA1BBED5C9001D80FC /* GovData.h */,
@@ -172,6 +177,8 @@
 				99EED23C1BD2BB200085A7AD /* GDAccount.m */,
 				99E15D0C1C64F48D00CA3D4C /* GDAddress.h */,
 				99E15D081C64F47200CA3D4C /* GDAddress.m */,
+				994A743D1C665F7400C1EC57 /* GDRUIAN.h */,
+				994A74391C665F5E00C1EC57 /* GDRUIAN.m */,
 			);
 			path = GovData;
 			sourceTree = "<group>";
@@ -352,6 +359,7 @@
 				99647D301BC3FFC60033EDB1 /* GDError.m in Sources */,
 				9982A6E11BCEA7F000512C8E /* GDVAT.m in Sources */,
 				99E3BEAC1BCCA7D0003811B2 /* GDEntity.m in Sources */,
+				994A743A1C665F5E00C1EC57 /* GDRUIAN.m in Sources */,
 				992A10DD1BBED5C9001D80FC /* GovData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
