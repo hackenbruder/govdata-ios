@@ -11,7 +11,7 @@ SDK nainstalujete standardním příkazem:
 	
 	pod install govdata
 
-Pro správnou funkci statické knihovny je potřebná správná konfigurace `XCode` projektu pro `Cocoapods` včetně správných cest ke hlavičkovým souborům a konfigurace build Targets. Knihovna je pokryta automatizovanými testy.
+Pro správnou funkci statické knihovny je potřebná správná konfigurace `XCode` projektu pro `CocoaPods` včetně správných cest ke hlavičkovým souborům a konfigurace build Targets. Knihovna je pokryta automatizovanými testy.
 
 Jedinou závislostí SDK je síťová knihovna `AFNetworking`.
 
