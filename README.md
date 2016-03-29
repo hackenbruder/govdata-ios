@@ -30,7 +30,7 @@ nebo pro produkční použití pomocí stage a klíče:
 ## Použití
 ### Jednoduché hledání
 
-K vyhledání právnické osoby v obchodním rejstříku slouží metoda `findEntityByNumber`.
+Vyhledání subjektu v obchodním rejstříku pomocí metody `findEntityByNumber`:
 
 	[govdata findEntityByNumber:(const NSString *) number success:(GDEntityResponse) success failure:(GDErrorResponse) failure];
 	
@@ -52,7 +52,7 @@ Podrobnější příklad můžete najít [zde](https://gist.github.com/hackenbru
 
 ### Geoprostorové hledání
 
-Vyhledání subjektů pomocí GPS souřadnic a rádiusu:
+Vyhledání subjektů pomocí GPS souřadnic a rádiusu metodou `findEntitiesByGeo`:
 
 	GDSearchResponse success = ^(const GDSearchResults * results) {
 		//handle search results
