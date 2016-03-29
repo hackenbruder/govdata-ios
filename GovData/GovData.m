@@ -66,4 +66,20 @@
 	} failure: failure];
 }
 
+- (void)findEntitiesByGeo:(const NSNumber *) latitude longitude:(const NSNumber *) longitude radius:(const NSNumber *) radius page:(const NSNumber *) page success:(GDEntityResponse) success failure:(GDErrorResponse) failure {
+	NSString * url = [self getURL: [NSString stringWithFormat:@"search/geo"]];
+	NSURLComponents * components = [NSURLComponents componentsWithString:url];
+	components.queryItems =
+	@[
+		[NSURLQueryItem queryItemWithName:@"lat" value:[latitude stringValue]],
+		[NSURLQueryItem queryItemWithName:@"lon" value:[longitude stringValue]],
+		[NSURLQueryItem queryItemWithName:@"radius" value:[radius stringValue]],
+		[NSURLQueryItem queryItemWithName:@"page" value:[page stringValue]]
+	];
+
+	[self get: [components.URL absoluteString] success:^(id response) {
+		success([[GDSearchResults alloc] initWithResponse: response]);
+	} failure: failure];
+}
+
 @end

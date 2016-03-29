@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		8AD87D14F7AAE936319AE789 /* libPods-GovData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A63ED61B4EEE834B5A60C0 /* libPods-GovData.a */; };
+		991F22181CA841D0001A4A76 /* GDSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F22171CA841D0001A4A76 /* GDSearchResults.m */; };
+		991F221E1CA8A90E001A4A76 /* GDSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F221D1CA8A90E001A4A76 /* GDSearchResult.m */; };
+		991F22201CA8FA21001A4A76 /* GDSearchResultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F221F1CA8FA21001A4A76 /* GDSearchResultsTests.m */; };
+		991F22221CA8FA31001A4A76 /* GDSearchResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F22211CA8FA31001A4A76 /* GDSearchResultTests.m */; };
 		992A10DB1BBED5C9001D80FC /* GovData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 992A10DA1BBED5C9001D80FC /* GovData.h */; };
 		992A10DD1BBED5C9001D80FC /* GovData.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A10DC1BBED5C9001D80FC /* GovData.m */; };
 		992A10ED1BBED9C3001D80FC /* GovDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A10EC1BBED9C3001D80FC /* GovDataTests.m */; };
 		992A10EF1BBED9C3001D80FC /* libGovData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A10D71BBED5C9001D80FC /* libGovData.a */; };
+		992C44AD1CA42CD8002EB42B /* GDRUIANTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C44AC1CA42CD8002EB42B /* GDRUIANTests.m */; };
 		994A743A1C665F5E00C1EC57 /* GDRUIAN.m in Sources */ = {isa = PBXBuildFile; fileRef = 994A74391C665F5E00C1EC57 /* GDRUIAN.m */; };
 		9960A3711BC4C3DA00F22D9D /* GovData.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9960A3701BC4C3DA00F22D9D /* GovData.strings */; };
 		99647D301BC3FFC60033EDB1 /* GDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 99647D2F1BC3FFC60033EDB1 /* GDError.m */; };
@@ -67,12 +72,19 @@
 /* Begin PBXFileReference section */
 		0F829637E85718F97B820BE2 /* Pods-GovData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GovData.release.xcconfig"; path = "Pods/Target Support Files/Pods-GovData/Pods-GovData.release.xcconfig"; sourceTree = "<group>"; };
 		6E4972AF0D8BAFEABE9A3069 /* Pods-GovData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GovData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GovData/Pods-GovData.debug.xcconfig"; sourceTree = "<group>"; };
+		991F22171CA841D0001A4A76 /* GDSearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSearchResults.m; sourceTree = "<group>"; };
+		991F221B1CA84225001A4A76 /* GDSearchResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSearchResults.h; sourceTree = "<group>"; };
+		991F221C1CA8A8FC001A4A76 /* GDSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSearchResult.h; sourceTree = "<group>"; };
+		991F221D1CA8A90E001A4A76 /* GDSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSearchResult.m; sourceTree = "<group>"; };
+		991F221F1CA8FA21001A4A76 /* GDSearchResultsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSearchResultsTests.m; sourceTree = "<group>"; };
+		991F22211CA8FA31001A4A76 /* GDSearchResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSearchResultTests.m; sourceTree = "<group>"; };
 		992A10D71BBED5C9001D80FC /* libGovData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGovData.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		992A10DA1BBED5C9001D80FC /* GovData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GovData.h; sourceTree = "<group>"; };
 		992A10DC1BBED5C9001D80FC /* GovData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GovData.m; sourceTree = "<group>"; };
 		992A10EA1BBED9C3001D80FC /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		992A10EC1BBED9C3001D80FC /* GovDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GovDataTests.m; sourceTree = "<group>"; };
 		992A10EE1BBED9C3001D80FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992C44AC1CA42CD8002EB42B /* GDRUIANTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRUIANTests.m; sourceTree = "<group>"; };
 		994A74391C665F5E00C1EC57 /* GDRUIAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRUIAN.m; sourceTree = "<group>"; };
 		994A743D1C665F7400C1EC57 /* GDRUIAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDRUIAN.h; sourceTree = "<group>"; };
 		994A743E1C6660D500C1EC57 /* GDTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTypes.h; sourceTree = "<group>"; };
@@ -179,6 +191,10 @@
 				99E15D081C64F47200CA3D4C /* GDAddress.m */,
 				994A743D1C665F7400C1EC57 /* GDRUIAN.h */,
 				994A74391C665F5E00C1EC57 /* GDRUIAN.m */,
+				991F221B1CA84225001A4A76 /* GDSearchResults.h */,
+				991F22171CA841D0001A4A76 /* GDSearchResults.m */,
+				991F221C1CA8A8FC001A4A76 /* GDSearchResult.h */,
+				991F221D1CA8A90E001A4A76 /* GDSearchResult.m */,
 			);
 			path = GovData;
 			sourceTree = "<group>";
@@ -193,6 +209,9 @@
 				9974BB131BD488000084FF12 /* GDVATTests.m */,
 				9974BB151BD4A2160084FF12 /* GDAccountTests.m */,
 				997B50061C65B29A00CC208B /* GDAddressTests.m */,
+				992C44AC1CA42CD8002EB42B /* GDRUIANTests.m */,
+				991F221F1CA8FA21001A4A76 /* GDSearchResultsTests.m */,
+				991F22211CA8FA31001A4A76 /* GDSearchResultTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -356,9 +375,11 @@
 				99E15D091C64F47200CA3D4C /* GDAddress.m in Sources */,
 				99EED23D1BD2BB200085A7AD /* GDAccount.m in Sources */,
 				9982A6DC1BCEA20800512C8E /* GDHelpers.m in Sources */,
+				991F22181CA841D0001A4A76 /* GDSearchResults.m in Sources */,
 				99647D301BC3FFC60033EDB1 /* GDError.m in Sources */,
 				9982A6E11BCEA7F000512C8E /* GDVAT.m in Sources */,
 				99E3BEAC1BCCA7D0003811B2 /* GDEntity.m in Sources */,
+				991F221E1CA8A90E001A4A76 /* GDSearchResult.m in Sources */,
 				994A743A1C665F5E00C1EC57 /* GDRUIAN.m in Sources */,
 				992A10DD1BBED5C9001D80FC /* GovData.m in Sources */,
 			);
@@ -372,8 +393,11 @@
 				9974BB0F1BD446FD0084FF12 /* GDEntityTests.m in Sources */,
 				9974BB161BD4A2160084FF12 /* GDAccountTests.m in Sources */,
 				992A10ED1BBED9C3001D80FC /* GovDataTests.m in Sources */,
+				991F22221CA8FA31001A4A76 /* GDSearchResultTests.m in Sources */,
+				992C44AD1CA42CD8002EB42B /* GDRUIANTests.m in Sources */,
 				9974BB0D1BD42B7A0084FF12 /* GDErrorTests.m in Sources */,
 				997B50071C65B29A00CC208B /* GDAddressTests.m in Sources */,
+				991F22201CA8FA21001A4A76 /* GDSearchResultsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

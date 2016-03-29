@@ -16,7 +16,35 @@
 	const NSDictionary * standard =
 	@{
 		@"number": @"0123456789",
-		@"address": @"",
+		@"address": @{
+			@"status": @300,
+			@"geo": @{
+				@"status": @210,
+				@"coords": @[@49.6590646, @13.819072]
+			},
+			@"ruian": @{
+				@"status": @210,
+				@"data": @{
+					@"address_id": @123,
+					@"city": @"city",
+					@"city_area1": @"city area1",
+					@"city_area2": @"city area2",
+					@"district": @"district",
+					@"street": @"street",
+					@"number1": @1,
+					@"number2": @2,
+					@"number2_character": @"a",
+					@"number_type": @"type",
+					@"postal_code": @10000,
+					@"updated_at": @1386720000
+				},
+				@"formatted": @[
+					@"line1",
+					@"line2",
+					@"line3"
+				]
+			}
+		},
 		@"name": @"Testing name",
 		@"registers":
 			@{

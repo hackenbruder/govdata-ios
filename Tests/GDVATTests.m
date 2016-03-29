@@ -52,7 +52,7 @@
 	_missingVAT = [[GDVAT alloc] initWithResponse: missingVAT];
 }
 
-- (void)test1HasUpdateDate {
+- (void)test1ReturnsUpdateDate {
 	const NSDate * s = [_standard updatedAt];
 	XCTAssertTrue([s isKindOfClass: [NSDate class]], "Missing update date");
 }

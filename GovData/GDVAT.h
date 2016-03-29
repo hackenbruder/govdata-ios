@@ -11,7 +11,7 @@
 
 - (id)initWithResponse:(id) response;
 
-- (const NSString *) number;
+- (const NSString *)number;
 - (BOOL)hasAccounts;
 - (BOOL)isUnreliable;
 

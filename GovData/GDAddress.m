@@ -15,7 +15,7 @@
 		id geo = [response objectForKey:@"geo"];
 		if(geo != nil) {
 			const NSNumber * status = [geo objectForKey:@"status"];
-			if (status != nil) {
+			if(status != nil) {
 				_geoStatus = [status integerValue];
 			} else {
 				_geoStatus = GDAddressDataUnavailable;
@@ -25,13 +25,54 @@
 			if(_geoStatus != GDAddressDataUnavailable && coords != nil && [coords count] == 2) {
 				const NSNumber * lat = [coords objectAtIndex:0];
 				const NSNumber * lon = [coords objectAtIndex:1];
-				_geoCoords = [[CLLocation alloc] initWithLatitude: [lat doubleValue] longitude: [lon doubleValue]];
+				_geo = [[CLLocation alloc] initWithLatitude: [lat doubleValue] longitude: [lon doubleValue]];
 			}
+		} else {
+			_geoStatus = GDAddressDataUnavailable;
 		}
 		
-		//ruian
+		id ruian = [response objectForKey:@"ruian"];
+		if(ruian != nil) {
+			const NSNumber * status = [ruian objectForKey:@"status"];
+			if(status != nil) {
+				_ruianStatus = [status integerValue];
+			} else {
+				_ruianStatus = GDAddressDataUnavailable;
+			}
+			
+			if(_ruianStatus != GDAddressDataUnavailable) {
+				_ruian = [[GDRUIAN alloc] initWithResponse: [ruian objectForKey:@"data"]];
+				_formatted = [ruian objectForKey:@"formatted"];
+			}
+		} else {
+			_ruianStatus = GDAddressDataUnavailable;
+		}
 	}
 	return self;
+}
+
+- (BOOL)hasGeo {
+	return _geo != nil && _geoStatus != GDAddressDataUnavailable;
+}
+
+- (BOOL)hasRUIAN {
+	return _ruian != nil && _ruianStatus != GDAddressDataUnavailable;
+}
+
+- (const NSArray<const NSString *> *)formatted:(const GDError **) error {
+	if([self hasRUIAN]) {
+		return _formatted;
+	} else {
+		*error = [GDError createWithCode: GDErrorDataUnavailable];
+		return nil;
+	}
+}
+
+- (const NSString *)description {
+	if([self hasRUIAN]) {
+		return [_formatted componentsJoinedByString:@"\n"];
+	}
+	return nil;
 }
 
 @end
