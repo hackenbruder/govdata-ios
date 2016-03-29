@@ -12,7 +12,7 @@ typedef void (^GDResponse)(id response);
 @property (nonatomic, readonly, strong) const NSString * url;
 @property (nonatomic, readonly, strong) const NSString * stage;
 @property (nonatomic, readonly, strong) const NSString * key;
-@property (nonatomic, readonly, strong) const AFHTTPRequestOperationManager * requestManager;
+@property (nonatomic, readonly, strong) const AFHTTPSessionManager * requestManager;
 
 - (id)init;
 - (id)initWithConfig:(const NSString *) stage key:(const NSString *) key;

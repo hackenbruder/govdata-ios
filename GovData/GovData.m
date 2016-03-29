@@ -13,7 +13,9 @@
 - (id)init {
 	self = [super init];
 	if(self) {
-		_requestManager = [AFHTTPRequestOperationManager manager];
+		_requestManager = [AFHTTPSessionManager manager];
+		_requestManager.requestSerializer = [AFJSONRequestSerializer serializer];
+		_requestManager.responseSerializer = [AFJSONResponseSerializer serializer];
 		[self setDefaults];
 		[self setHeaders];
 	}
@@ -35,20 +37,23 @@
 }
 
 - (void)get:(NSString *) url success:(GDResponse) success failure:(GDErrorResponse) failure {
-	[_requestManager GET:url parameters:nil success:^(AFHTTPRequestOperation * operation, id responseObject) {
+	[_requestManager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * operation, id responseObject) {
+		NSHTTPURLResponse * response = (NSHTTPURLResponse *)operation.response;
 		id errorObject = [responseObject objectForKey:@"error"];
-		NSInteger statusCode = operation.response.statusCode;
-		if (statusCode == 200) {
+		if (response.statusCode == 200) {
 			success(responseObject);
 		} else if (errorObject) {
 			failure([GDError createWithResponse: errorObject]);
 		} else {
 			failure([GDError createWithCode: GDErrorGeneric]);
 		}
-	} failure:^(AFHTTPRequestOperation * operation, NSError * error) {
-		id errorObject = [[operation responseObject] objectForKey:@"error"];
-		NSInteger statusCode = operation.response.statusCode;
-		if (statusCode == 429) {
+	} failure:^(NSURLSessionDataTask * operation, NSError * error) {
+		NSHTTPURLResponse * response = (NSHTTPURLResponse *)operation.response;
+		NSData * data = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseDataErrorKey];
+		NSError * jsonError;
+		NSDictionary * responseObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+		id errorObject = [responseObject objectForKey:@"error"];
+		if (response.statusCode == 429) {
 			failure([GDError createWithCode: GDErrorThrottled]);
 		} else if (errorObject) {
 			failure([GDError createWithResponse: errorObject]);
