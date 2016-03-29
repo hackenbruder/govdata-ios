@@ -8,7 +8,7 @@
 		_number = [response objectForKey:@"account_number"];
 		_prefix = [response objectForKey:@"prefix"];
 		_bankCode = [response objectForKey:@"bank_code"];
-		_publishedAt = [GDHelpers createDate: [response objectForKey:@"published_at"]];
+		_publishedAt = [GDHelpers createDateFromMsec: [response objectForKey:@"published_at"]];
 	}
 	return self;
 }

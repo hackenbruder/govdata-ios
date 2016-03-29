@@ -10,7 +10,7 @@
 		_number = [response objectForKey:@"dic"];
 		_unreliable = [[response objectForKey:@"unreliable"] boolValue];
 		_accounts = [GDAccount createWithResponse: [response objectForKey:@"accounts"]];
-		_updatedAt = [GDHelpers createDate: [response objectForKey:@"updated_at"]];
+		_updatedAt = [GDHelpers createDateFromMsec: [response objectForKey:@"updated_at"]];
 	}
 	return self;
 }

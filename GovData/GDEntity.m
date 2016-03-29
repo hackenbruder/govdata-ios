@@ -8,7 +8,7 @@
 		_registers = [response objectForKey:@"registers"];
 		_number = [response objectForKey:@"number"];
 		_name = [response objectForKey:@"name"];
-		_foundedAt = [GDHelpers createDate: [response objectForKey:@"founded_at"]];
+		_foundedAt = [GDHelpers createDateFromMsec: [response objectForKey:@"founded_at"]];
 		
 		id vat = [response objectForKey:@"vat"];
 		if(vat != nil && [vat isKindOfClass:[NSDictionary class]] && [self hasVAT]) {
