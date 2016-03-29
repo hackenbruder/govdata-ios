@@ -28,6 +28,7 @@ nebo pro produkční použití pomocí stage a klíče:
 	const GovData * govdata = [[GovData alloc] initWithConfig:@"<stage>" key:@"<hodnota>"];
 
 ## Použití
+### Jednoduché hledání
 
 K vyhledání právnické osoby v obchodním rejstříku slouží metoda `findEntityByNumber`.
 
@@ -48,6 +49,16 @@ Příklad vyhledávání:
 	[govdata findEntityByNumber:@"00006947" success: success failure: failure];
 
 Podrobnější příklad můžete najít [zde](https://gist.github.com/hackenbruder/aca3cde0e48e6257d40a).
+
+### Geoprostorové hledání
+
+Vyhledání subjektů pomocí GPS souřadnic a rádiusu:
+
+	GDSearchResponse success = ^(const GDSearchResults * results) {
+		//handle search results
+	};
+	
+	[govdata findEntitiesByGeo:@50.08915042002743 longitude:@14.407195183397297 radius:@100 page:@1 success: success failure: failure];
 
 ## Dokumentace
 
