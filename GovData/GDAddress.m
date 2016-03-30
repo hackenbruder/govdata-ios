@@ -25,7 +25,7 @@
 			if(_geoStatus != GDAddressDataUnavailable && coords != nil && [coords count] == 2) {
 				const NSNumber * lat = [coords objectAtIndex:0];
 				const NSNumber * lon = [coords objectAtIndex:1];
-				_geo = [[CLLocation alloc] initWithLatitude: [lat doubleValue] longitude: [lon doubleValue]];
+				_geo = CLLocationCoordinate2DMake([lat doubleValue], [lon doubleValue]);
 			}
 		} else {
 			_geoStatus = GDAddressDataUnavailable;
@@ -52,7 +52,7 @@
 }
 
 - (BOOL)hasGeo {
-	return _geo != nil && _geoStatus != GDAddressDataUnavailable;
+	return _geoStatus != GDAddressDataUnavailable;
 }
 
 - (BOOL)hasRUIAN {

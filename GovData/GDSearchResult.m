@@ -8,8 +8,21 @@
 		_number = [response objectForKey:@"number"];
 		_name = [response objectForKey:@"name"];
 		_foundedAt = [GDHelpers createDate: [response objectForKey:@"founded_at"]];
+		
+		const NSNumber * lat = [response objectForKey:@"lat"];
+		const NSNumber * lon = [response objectForKey:@"lon"];
+		if(lat != nil && lon != nil) {
+			_geoStatus = GDAddressDataAccurate;
+			_geo = CLLocationCoordinate2DMake([lat doubleValue], [lon doubleValue]);
+		} else {
+			_geoStatus = GDAddressDataUnavailable;
+		}
 	}
 	return self;
+}
+
+- (BOOL)hasGeo {
+	return _geoStatus != GDAddressDataUnavailable;
 }
 
 + (const NSArray<const GDSearchResult *> *)createWithResponse:(id) response {

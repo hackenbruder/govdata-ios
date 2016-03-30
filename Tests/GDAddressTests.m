@@ -46,7 +46,7 @@
 }
 
 - (void)test3HasGeo {
-	XCTAssertTrue([[_standard geo] isKindOfClass: [CLLocation class]], "Missing geo");
+	XCTAssertTrue([_standard geo].latitude != 0 && [_standard geo].longitude != 0, "Missing geo");
 }
 
 - (void)test4HasRUIANStatus {
