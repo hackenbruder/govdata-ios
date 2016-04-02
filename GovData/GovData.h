@@ -24,6 +24,6 @@ typedef void (^GDResponse)(id response);
 - (void)get:(NSString *) url success:(GDResponse) success failure:(GDErrorResponse) failure;
 	
 - (void)findEntityByNumber:(const NSString *) number success:(GDEntityResponse) success failure:(GDErrorResponse) failure;
-- (void)findEntitiesByGeo:(const NSNumber *) latitude longitude:(const NSNumber *) longitude radius:(const NSNumber *) radius page:(const NSNumber *) page success:(GDSearchResponse) success failure:(GDErrorResponse) failure;
+- (void)findEntitiesByGeo:(const CLLocationCoordinate2D *) coords radius:(int) radius page:(int) page success:(GDSearchResponse) success failure:(GDErrorResponse) failure;
 
 @end

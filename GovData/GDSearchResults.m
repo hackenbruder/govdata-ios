@@ -2,9 +2,10 @@
 
 @implementation GDSearchResults
 
-- (id)initWithResponse:(id) response {
+- (id)initWithResponse:(id) response page:(int) page {
 	self = [super init];
 	if(self) {
+		_page = page;
 		_pages = [response objectForKey:@"pages"];
 		_results = [GDSearchResult createWithResponse:[response objectForKey:@"data"]];
 	}

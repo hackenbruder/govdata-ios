@@ -26,15 +26,20 @@
 			},
 		]
 	};
-	_standard = [[GDSearchResults alloc] initWithResponse: standard];
+	_standard = [[GDSearchResults alloc] initWithResponse: standard page: 1];
 }
 
-- (void)test1ReturnsPages {
+- (void)test1ReturnsPage {
+	const int p = [_standard page];
+	XCTAssertTrue(p > 0, "Missing page number");
+}
+
+- (void)test2ReturnsPages {
 	const NSNumber * n = [_standard pages];
 	XCTAssertTrue([n isKindOfClass: [NSNumber class]] && n > 0, "Missing page count");
 }
 
-- (void)test2HasResults {
+- (void)test3HasResults {
 	BOOL t1 = [_standard hasResults];
 	XCTAssertTrue(t1, "Invalid results report");
 }

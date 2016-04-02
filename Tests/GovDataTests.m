@@ -68,7 +68,8 @@
 		[expectation fulfill];
 	};
 	
-	[_govdata findEntitiesByGeo:@50.08915042002743 longitude:@14.407195183397297 radius:@100 page:@1 success: success failure: failure];
+	CLLocationCoordinate2D coords = { 50.08915042002743, 14.407195183397297 };
+	[_govdata findEntitiesByGeo:&coords radius:100 page:1 success: success failure: failure];
 	
 	[self waitForExpectationsWithTimeout:5 handler:^(NSError * error) {
 		if (error != nil) {
