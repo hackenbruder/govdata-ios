@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name							= 'GovData'
-	s.version						= '1.0.7'
+	s.version						= '1.0.8'
 	s.summary						= 'GovData iOS SDK'
 	s.homepage						= 'https://github.com/hackenbruder/govdata-ios'
 	s.platform						= :ios, '8.0'
