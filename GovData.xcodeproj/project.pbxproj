@@ -88,6 +88,7 @@
 		994A74391C665F5E00C1EC57 /* GDRUIAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRUIAN.m; sourceTree = "<group>"; };
 		994A743D1C665F7400C1EC57 /* GDRUIAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDRUIAN.h; sourceTree = "<group>"; };
 		994A743E1C6660D500C1EC57 /* GDTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTypes.h; sourceTree = "<group>"; };
+		995CDB901CB18FD000806131 /* GovData.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GovData.podspec; sourceTree = "<group>"; };
 		9960A3701BC4C3DA00F22D9D /* GovData.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = GovData.strings; sourceTree = "<group>"; };
 		99647D2E1BC3FFC60033EDB1 /* GDError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDError.h; sourceTree = "<group>"; };
 		99647D2F1BC3FFC60033EDB1 /* GDError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDError.m; sourceTree = "<group>"; };
@@ -153,6 +154,7 @@
 			children = (
 				99D167341BC0BC8A001C0F8D /* Pods.xcodeproj */,
 				99D167321BC0BA8C001C0F8D /* Podfile */,
+				995CDB901CB18FD000806131 /* GovData.podspec */,
 				9960A3701BC4C3DA00F22D9D /* GovData.strings */,
 				992A10D91BBED5C9001D80FC /* GovData */,
 				992A10EB1BBED9C3001D80FC /* Tests */,

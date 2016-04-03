@@ -13,6 +13,7 @@
 	const NSDictionary * standard =
 	@{
 		@"pages": @1,
+		@"total": @1,
 		@"data": @[
 			@{
 				@"number": @"123",
@@ -34,12 +35,17 @@
 	XCTAssertTrue(p > 0, "Missing page number");
 }
 
-- (void)test2ReturnsPages {
+- (void)test2ReturnsTotal {
+	const NSNumber * n = [_standard total];
+	XCTAssertTrue([n isKindOfClass: [NSNumber class]] && n > 0, "Missing total count");
+}
+
+- (void)test3ReturnsPages {
 	const NSNumber * n = [_standard pages];
 	XCTAssertTrue([n isKindOfClass: [NSNumber class]] && n > 0, "Missing page count");
 }
 
-- (void)test3HasResults {
+- (void)test4HasResults {
 	BOOL t1 = [_standard hasResults];
 	XCTAssertTrue(t1, "Invalid results report");
 }

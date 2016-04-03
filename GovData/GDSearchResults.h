@@ -5,6 +5,7 @@
 @interface GDSearchResults : NSObject
 
 @property (nonatomic, readonly) int page;
+@property (nonatomic, readonly, strong) const NSNumber * total;
 @property (nonatomic, readonly, strong) const NSNumber * pages;
 @property (nonatomic, readonly, strong) const NSArray<const GDSearchResult *> * results;
 

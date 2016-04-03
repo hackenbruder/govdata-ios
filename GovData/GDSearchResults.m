@@ -6,6 +6,7 @@
 	self = [super init];
 	if(self) {
 		_page = page;
+		_total = [response objectForKey:@"total"];
 		_pages = [response objectForKey:@"pages"];
 		_results = [GDSearchResult createWithResponse:[response objectForKey:@"data"]];
 	}
