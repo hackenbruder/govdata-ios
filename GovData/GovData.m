@@ -36,8 +36,8 @@
 	return [NSString stringWithFormat:@"%@%@/%@", _url, _stage, method];
 }
 
-- (void)get:(NSString *) url success:(GDResponse) success failure:(GDErrorResponse) failure {
-	[_requestManager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * operation, id responseObject) {
+- (NSURLSessionDataTask *)get:(NSString *) url success:(GDResponse) success failure:(GDErrorResponse) failure {
+	return [_requestManager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * operation, id responseObject) {
 		NSHTTPURLResponse * response = (NSHTTPURLResponse *)operation.response;
 		id errorObject = [responseObject objectForKey:@"error"];
 		if (response.statusCode == 200) {
@@ -63,15 +63,15 @@
 	}];
 }
 
-- (void)findEntityByNumber:(const NSString *) number success:(GDEntityResponse) success failure:(GDErrorResponse) failure {
+- (NSURLSessionDataTask *)findEntityByNumber:(const NSString *) number success:(GDEntityResponse) success failure:(GDErrorResponse) failure {
 	NSString * url = [self getURL: [NSString stringWithFormat:@"entity/%@", number]];
 	
-	[self get: url success:^(id response) {
+	return [self get: url success:^(id response) {
 		success([[GDEntity alloc] initWithResponse: response]);
 	} failure: failure];
 }
 
-- (void)findEntitiesByGeo:(const CLLocationCoordinate2D *) coords radius:(int) radius page:(int) page success:(GDSearchResponse) success failure:(GDErrorResponse) failure {
+- (NSURLSessionDataTask *)findEntitiesByGeo:(const CLLocationCoordinate2D *) coords radius:(int) radius page:(int) page success:(GDSearchResponse) success failure:(GDErrorResponse) failure {
 	NSString * url = [self getURL: [NSString stringWithFormat:@"search/geo"]];
 	NSURLComponents * components = [NSURLComponents componentsWithString:url];
 	components.queryItems =
@@ -82,7 +82,7 @@
 		[NSURLQueryItem queryItemWithName:@"page" value:[@(page) stringValue]]
 	];
 
-	[self get: [components.URL absoluteString] success:^(id response) {
+	return [self get: [components.URL absoluteString] success:^(id response) {
 		success([[GDSearchResults alloc] initWithResponse: response page:page]);
 	} failure: failure];
 }

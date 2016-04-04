@@ -21,9 +21,9 @@ typedef void (^GDResponse)(id response);
 
 - (void)setHeaders;
 - (NSString *)getURL:(const NSString *) method;
-- (void)get:(NSString *) url success:(GDResponse) success failure:(GDErrorResponse) failure;
+- (NSURLSessionDataTask *)get:(NSString *) url success:(GDResponse) success failure:(GDErrorResponse) failure;
 	
-- (void)findEntityByNumber:(const NSString *) number success:(GDEntityResponse) success failure:(GDErrorResponse) failure;
-- (void)findEntitiesByGeo:(const CLLocationCoordinate2D *) coords radius:(int) radius page:(int) page success:(GDSearchResponse) success failure:(GDErrorResponse) failure;
+- (NSURLSessionDataTask *)findEntityByNumber:(const NSString *) number success:(GDEntityResponse) success failure:(GDErrorResponse) failure;
+- (NSURLSessionDataTask *)findEntitiesByGeo:(const CLLocationCoordinate2D *) coords radius:(int) radius page:(int) page success:(GDSearchResponse) success failure:(GDErrorResponse) failure;
 
 @end
