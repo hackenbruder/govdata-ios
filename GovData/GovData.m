@@ -38,6 +38,10 @@
 
 - (NSURLSessionDataTask *)get:(NSString *) url success:(GDResponse) success failure:(GDErrorResponse) failure {
 	return [_requestManager GET:url parameters:nil progress:nil success:^(NSURLSessionDataTask * operation, id responseObject) {
+		if(responseObject == nil) {
+			failure([GDError createWithCode: GDErrorGeneric]);
+			return;
+		}
 		NSHTTPURLResponse * response = (NSHTTPURLResponse *)operation.response;
 		id errorObject = [responseObject objectForKey:@"error"];
 		if (response.statusCode == 200) {
@@ -49,9 +53,21 @@
 		}
 	} failure:^(NSURLSessionDataTask * operation, NSError * error) {
 		NSHTTPURLResponse * response = (NSHTTPURLResponse *)operation.response;
+		if(response == nil) {
+			failure([GDError createWithCode: GDErrorGeneric]);
+			return;
+		}
 		NSData * data = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseDataErrorKey];
+		if(data == nil) {
+			failure([GDError createWithCode: GDErrorGeneric]);
+			return;
+		}
 		NSError * jsonError;
 		NSDictionary * responseObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+		if(responseObject == nil) {
+			failure([GDError createWithCode: GDErrorGeneric]);
+			return;
+		}
 		id errorObject = [responseObject objectForKey:@"error"];
 		if (response.statusCode == 429) {
 			failure([GDError createWithCode: GDErrorThrottled]);
