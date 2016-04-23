@@ -5,7 +5,7 @@ NSString * const GDStringsTable = @"GovData";
 
 @implementation GDError
 
-- (id)initWithCode:(const ErrorEnum) code {
+- (id)initWithCode:(const GDErrorEnum) code {
 	NSString * key = [NSString stringWithFormat:@"%ld", (long)code];
 	NSString * description = NSLocalizedStringFromTable(key, GDStringsTable, nil);
 	NSDictionary * userInfo = @{NSLocalizedDescriptionKey: description};
@@ -14,7 +14,7 @@ NSString * const GDStringsTable = @"GovData";
 	return self;
 }
 
-- (id)initWithMessage:(const ErrorEnum) code message:(const NSString *) message {
+- (id)initWithMessage:(const GDErrorEnum) code message:(const NSString *) message {
 	NSString * key = [NSString stringWithFormat:@"%ld", (long)code];
 	NSString * description = NSLocalizedStringFromTable(key, GDStringsTable, nil);
 	NSDictionary * userInfo;
@@ -28,7 +28,7 @@ NSString * const GDStringsTable = @"GovData";
 	return self;
 }
 
-+ (const GDError *)createWithCode:(const ErrorEnum) code {
++ (const GDError *)createWithCode:(const GDErrorEnum) code {
 	return [[self alloc] initWithCode: code];
 }
 

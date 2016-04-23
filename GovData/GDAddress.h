@@ -6,10 +6,10 @@
 
 @interface GDAddress : NSObject
 
-@property (nonatomic, readonly) AddressStatus status;
-@property (nonatomic, readonly) AddressDataStatus geoStatus;
+@property (nonatomic, readonly) GDAddressStatus status;
+@property (nonatomic, readonly) GDAddressDataStatus geoStatus;
 @property (nonatomic, readonly) CLLocationCoordinate2D geo;
-@property (nonatomic, readonly) AddressDataStatus ruianStatus;
+@property (nonatomic, readonly) GDAddressDataStatus ruianStatus;
 @property (nonatomic, readonly, strong) const GDRUIAN * ruian;
 @property (nonatomic, readonly, strong) const NSArray<const NSString *> * formatted;
 

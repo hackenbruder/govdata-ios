@@ -4,10 +4,10 @@
 
 @interface GDError : NSError
 
-- (id)initWithCode:(const ErrorEnum) code;
-- (id)initWithMessage:(const ErrorEnum) code message:(const NSString *) message;
+- (id)initWithCode:(const GDErrorEnum) code;
+- (id)initWithMessage:(const GDErrorEnum) code message:(const NSString *) message;
 
-+ (const GDError *)createWithCode:(const ErrorEnum) code;
++ (const GDError *)createWithCode:(const GDErrorEnum) code;
 + (const GDError *)createWithResponse:(id) response;
 
 @end

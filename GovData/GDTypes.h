@@ -1,4 +1,4 @@
-typedef NS_ENUM(NSInteger, ErrorEnum) {
+typedef NS_ENUM(NSInteger, GDErrorEnum) {
 	GDErrorGeneric						= 100, //@"api request error"
 	GDErrorThrottled					= 105, //@"api request was throttled"
 	GDErrorNotFound						= 110, //@"requested content was not found"
@@ -6,14 +6,14 @@ typedef NS_ENUM(NSInteger, ErrorEnum) {
 	GDErrorDataUnavailable		= 120  //@"data unavailable or missing"
 };
 
-typedef NS_ENUM(NSInteger, AddressStatus) {
+typedef NS_ENUM(NSInteger, GDAddressStatus) {
 	GDAddressOK								=	300, //@"address ok"
 	GDAddressMissingData			= 305, //@"address is missing data"
 	GDAddressRUIANPending			= 310, //@"address ruian translation pending"
 	GDAddressGeoPending				= 315, //@"address geocoding pending"
 };
 
-typedef NS_ENUM(NSInteger, AddressDataStatus) {
+typedef NS_ENUM(NSInteger, GDAddressDataStatus) {
 	GDAddressDataUnavailable	= 200, //@"address data unavailable"
 	GDAddressDataInaccurate		= 205, //@"address data inaccurate"
 	GDAddressDataAccurate			= 210, //@"address data accurate"
