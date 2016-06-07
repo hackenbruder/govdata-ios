@@ -53,6 +53,10 @@
 		}
 	} failure:^(NSURLSessionDataTask * operation, NSError * error) {
 		NSHTTPURLResponse * response = (NSHTTPURLResponse *)operation.response;
+		if(error.code == NSURLErrorCancelled) {
+			failure([GDError createWithCode: GDErrorCancelled]);
+			return;
+		}
 		if(response == nil) {
 			failure([GDError createWithCode: GDErrorGeneric]);
 			return;

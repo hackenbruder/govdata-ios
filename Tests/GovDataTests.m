@@ -81,4 +81,31 @@
 	}];
 }
 
+- (void)test4QueryTaskCancellation {
+	XCTestExpectation * expectation = [self expectationWithDescription:@"Returns a cancelled error"];
+	
+	GDErrorResponse failure = ^(const GDError * error) {
+		if ([error code] == GDErrorCancelled) {
+			[expectation fulfill];
+		} else {
+			XCTFail(@"%@", error.localizedDescription);
+		}
+	};
+	
+	GDEntityResponse success = ^(const GDEntity * entity) {
+		XCTAssertNotNil(entity, "Entity Found");
+	};
+	
+	NSURLSessionDataTask * task = [_govdata findEntityByNumber:@"00006947" success: success failure: failure];
+	XCTAssertNotNil(task);
+	
+	[task cancel];
+	
+	[self waitForExpectationsWithTimeout:5 handler:^(NSError * error) {
+		if (error != nil) {
+			XCTFail(@"%@", error.localizedDescription);
+		}
+	}];
+}
+
 @end

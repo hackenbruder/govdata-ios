@@ -3,7 +3,8 @@ typedef NS_ENUM(NSInteger, GDErrorEnum) {
 	GDErrorThrottled					= 105, //@"api request was throttled"
 	GDErrorNotFound						= 110, //@"requested content was not found"
 	GDErrorInvalidRequest			= 115, //@"invalid request"
-	GDErrorDataUnavailable		= 120  //@"data unavailable or missing"
+	GDErrorDataUnavailable		= 120, //@"data unavailable or missing"
+	GDErrorCancelled					= 125, //@"request was cancelled"
 };
 
 typedef NS_ENUM(NSInteger, GDAddressStatus) {

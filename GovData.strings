@@ -3,3 +3,4 @@
 "110" = "requested content was not found";
 "115" = "invalid request";
 "120" = "data unavailable or missing";
+"125" = "request was cancelled";
