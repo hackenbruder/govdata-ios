@@ -1,5 +1,7 @@
 #import "GDEntity.h"
 
+NSString * const GDEntityTypeTable = @"GDEntityTypes";
+
 @implementation GDEntity
 
 - (id)initWithResponse:(id) response {
@@ -8,6 +10,9 @@
 		_registers = [response objectForKey:@"registers"];
 		_number = [response objectForKey:@"number"];
 		_name = [response objectForKey:@"name"];
+		_type = [response objectForKey:@"legal_type_id"];
+		_typeDescription = NSLocalizedStringFromTable((NSString *)_type, GDEntityTypeTable, nil);
+		
 		_foundedAt = [GDHelpers createDateFromMsec: [response objectForKey:@"founded_at"]];
 		
 		id vat = [response objectForKey:@"vat"];

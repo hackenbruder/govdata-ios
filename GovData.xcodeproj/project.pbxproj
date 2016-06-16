@@ -85,8 +85,8 @@
 		992A10EC1BBED9C3001D80FC /* GovDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GovDataTests.m; sourceTree = "<group>"; };
 		992A10EE1BBED9C3001D80FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		992C44AC1CA42CD8002EB42B /* GDRUIANTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRUIANTests.m; sourceTree = "<group>"; };
-		99399D771D125FA20083CA15 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/EntityTypes.strings; sourceTree = "<group>"; };
-		99399D7A1D125FD90083CA15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EntityTypes.strings; sourceTree = "<group>"; };
+		99399D771D125FA20083CA15 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/GDEntityTypes.strings; sourceTree = "<group>"; };
+		99399D7A1D125FD90083CA15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GDEntityTypes.strings; sourceTree = "<group>"; };
 		99399D7E1D1260B50083CA15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GovData.strings; sourceTree = "<group>"; };
 		99399D801D1260B80083CA15 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/GovData.strings; sourceTree = "<group>"; };
 		994A74391C665F5E00C1EC57 /* GDRUIAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRUIAN.m; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		992A10CE1BBED5C9001D80FC = {
 			isa = PBXGroup;
 			children = (
-				99399D781D125FA20083CA15 /* EntityTypes.strings */,
+				99399D781D125FA20083CA15 /* GDEntityTypes.strings */,
 				99D167341BC0BC8A001C0F8D /* Pods.xcodeproj */,
 				99D167321BC0BA8C001C0F8D /* Podfile */,
 				995CDB901CB18FD000806131 /* GovData.podspec */,
@@ -419,13 +419,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		99399D781D125FA20083CA15 /* EntityTypes.strings */ = {
+		99399D781D125FA20083CA15 /* GDEntityTypes.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				99399D771D125FA20083CA15 /* cs */,
 				99399D7A1D125FD90083CA15 /* en */,
 			);
-			name = EntityTypes.strings;
+			name = GDEntityTypes.strings;
 			sourceTree = "<group>";
 		};
 		99399D7F1D1260B50083CA15 /* GovData.strings */ = {

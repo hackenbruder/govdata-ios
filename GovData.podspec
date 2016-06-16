@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
 	s.public_header_files	= 'GovData/**/*.h'
 	s.framework						= 'SystemConfiguration'
 	s.requires_arc				= true
-	s.resource_bundles		= { 'GovData' => [ 'GovData.strings' ] }
+	s.resource_bundles		= { 'GovData' => [ '*.lproj' ] }
 	s.dependency					'AFNetworking'
 end

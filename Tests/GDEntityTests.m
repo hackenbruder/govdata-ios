@@ -73,6 +73,7 @@
 				@"tax_office_id": @"463",
 				@"dic": @"0123456789",
 			},
+		@"legal_type_id": @"100",
 		@"founded_at": @1400112000000
 	};
 	_standard = [[GDEntity alloc] initWithResponse: standard];
@@ -90,6 +91,7 @@
 				@"statistical": @TRUE
 				},
 		@"vat": @"",
+		@"legal_type_id": @"100",
 		@"founded_at": @1400112000000
 		};
 	_missingVAT = [[GDEntity alloc] initWithResponse: missingVAT];
@@ -107,6 +109,7 @@
 				@"statistical": @TRUE
 			},
 		@"vat": @"",
+		@"legal_type_id": @"100",
 		@"founded_at": @1400112000000
 	};
 	_noVAT = [[GDEntity alloc] initWithResponse: noVAT];
@@ -148,6 +151,16 @@
 	GDError * error;
 	const GDVAT * vat = [_missingVAT vat: &error];
 	XCTAssertTrue([error code] == GDErrorDataUnavailable && vat == nil, "Invalid missing VAT error");
+}
+
+- (void)test8HasType {
+	const NSString * s = [_standard type];
+	XCTAssertTrue([s isKindOfClass:[NSString class]] && [s length] > 0, "Missing type");
+}
+
+- (void)test9HasTypeDescription {
+	const NSString * s = [_standard typeDescription];
+	XCTAssertTrue([s isKindOfClass:[NSString class]] && [s length] > 0, "Missing type description");
 }
 
 @end
