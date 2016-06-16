@@ -18,7 +18,6 @@
 		992C44AD1CA42CD8002EB42B /* GDRUIANTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C44AC1CA42CD8002EB42B /* GDRUIANTests.m */; };
 		99399D7D1D1260B50083CA15 /* GovData.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99399D7F1D1260B50083CA15 /* GovData.strings */; };
 		99399D971D127A410083CA15 /* libGovData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A10D71BBED5C9001D80FC /* libGovData.a */; };
-		99399D981D127A650083CA15 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 996EBE671D1273B40001599B /* libPods-Tests.a */; };
 		99399D9F1D127F0A0083CA15 /* GovData.h in Headers */ = {isa = PBXBuildFile; fileRef = 992A10DA1BBED5C9001D80FC /* GovData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		994A743A1C665F5E00C1EC57 /* GDRUIAN.m in Sources */ = {isa = PBXBuildFile; fileRef = 994A74391C665F5E00C1EC57 /* GDRUIAN.m */; };
 		99647D301BC3FFC60033EDB1 /* GDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 99647D2F1BC3FFC60033EDB1 /* GDError.m */; };
@@ -140,7 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99399D981D127A650083CA15 /* libPods-Tests.a in Frameworks */,
 				99399D971D127A410083CA15 /* libGovData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,7 +526,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -574,7 +572,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -614,7 +612,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C638C100B20CFF56881F93F3 /* Pods-GovData.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -626,7 +624,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 052460F3A2BA9DCE526317E9 /* Pods-GovData.release.xcconfig */;
 			buildSettings = {
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -636,7 +634,7 @@
 		};
 		992A10F31BBED9C3001D80FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39BC4ECC274D14828EA20052 /* Pods-Tests.debug.xcconfig */;
+			baseConfigurationReference = C638C100B20CFF56881F93F3 /* Pods-GovData.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -648,7 +646,7 @@
 		};
 		992A10F41BBED9C3001D80FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A682B2A3B440F6C24F7C4D0A /* Pods-Tests.release.xcconfig */;
+			baseConfigurationReference = C638C100B20CFF56881F93F3 /* Pods-GovData.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
