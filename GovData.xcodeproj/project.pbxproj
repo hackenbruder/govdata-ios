@@ -17,8 +17,8 @@
 		992A10ED1BBED9C3001D80FC /* GovDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A10EC1BBED9C3001D80FC /* GovDataTests.m */; };
 		992A10EF1BBED9C3001D80FC /* libGovData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A10D71BBED5C9001D80FC /* libGovData.a */; };
 		992C44AD1CA42CD8002EB42B /* GDRUIANTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C44AC1CA42CD8002EB42B /* GDRUIANTests.m */; };
+		99399D7D1D1260B50083CA15 /* GovData.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99399D7F1D1260B50083CA15 /* GovData.strings */; };
 		994A743A1C665F5E00C1EC57 /* GDRUIAN.m in Sources */ = {isa = PBXBuildFile; fileRef = 994A74391C665F5E00C1EC57 /* GDRUIAN.m */; };
-		9960A3711BC4C3DA00F22D9D /* GovData.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9960A3701BC4C3DA00F22D9D /* GovData.strings */; };
 		99647D301BC3FFC60033EDB1 /* GDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 99647D2F1BC3FFC60033EDB1 /* GDError.m */; };
 		9974BB0D1BD42B7A0084FF12 /* GDErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9974BB0C1BD42B7A0084FF12 /* GDErrorTests.m */; };
 		9974BB0F1BD446FD0084FF12 /* GDEntityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9974BB0E1BD446FC0084FF12 /* GDEntityTests.m */; };
@@ -85,11 +85,14 @@
 		992A10EC1BBED9C3001D80FC /* GovDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GovDataTests.m; sourceTree = "<group>"; };
 		992A10EE1BBED9C3001D80FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		992C44AC1CA42CD8002EB42B /* GDRUIANTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRUIANTests.m; sourceTree = "<group>"; };
+		99399D771D125FA20083CA15 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/EntityTypes.strings; sourceTree = "<group>"; };
+		99399D7A1D125FD90083CA15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EntityTypes.strings; sourceTree = "<group>"; };
+		99399D7E1D1260B50083CA15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GovData.strings; sourceTree = "<group>"; };
+		99399D801D1260B80083CA15 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/GovData.strings; sourceTree = "<group>"; };
 		994A74391C665F5E00C1EC57 /* GDRUIAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRUIAN.m; sourceTree = "<group>"; };
 		994A743D1C665F7400C1EC57 /* GDRUIAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDRUIAN.h; sourceTree = "<group>"; };
 		994A743E1C6660D500C1EC57 /* GDTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTypes.h; sourceTree = "<group>"; };
 		995CDB901CB18FD000806131 /* GovData.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GovData.podspec; sourceTree = "<group>"; };
-		9960A3701BC4C3DA00F22D9D /* GovData.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = GovData.strings; sourceTree = "<group>"; };
 		99647D2E1BC3FFC60033EDB1 /* GDError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDError.h; sourceTree = "<group>"; };
 		99647D2F1BC3FFC60033EDB1 /* GDError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDError.m; sourceTree = "<group>"; };
 		9974BB0C1BD42B7A0084FF12 /* GDErrorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDErrorTests.m; sourceTree = "<group>"; };
@@ -152,10 +155,11 @@
 		992A10CE1BBED5C9001D80FC = {
 			isa = PBXGroup;
 			children = (
+				99399D781D125FA20083CA15 /* EntityTypes.strings */,
 				99D167341BC0BC8A001C0F8D /* Pods.xcodeproj */,
 				99D167321BC0BA8C001C0F8D /* Podfile */,
 				995CDB901CB18FD000806131 /* GovData.podspec */,
-				9960A3701BC4C3DA00F22D9D /* GovData.strings */,
+				99399D7F1D1260B50083CA15 /* GovData.strings */,
 				992A10D91BBED5C9001D80FC /* GovData */,
 				992A10EB1BBED9C3001D80FC /* Tests */,
 				992A10D81BBED5C9001D80FC /* Products */,
@@ -290,6 +294,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				cs,
 			);
 			mainGroup = 992A10CE1BBED5C9001D80FC;
 			productRefGroup = 992A10D81BBED5C9001D80FC /* Products */;
@@ -330,7 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9960A3711BC4C3DA00F22D9D /* GovData.strings in Resources */,
+				99399D7D1D1260B50083CA15 /* GovData.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +417,27 @@
 			targetProxy = 992A10F01BBED9C3001D80FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99399D781D125FA20083CA15 /* EntityTypes.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99399D771D125FA20083CA15 /* cs */,
+				99399D7A1D125FD90083CA15 /* en */,
+			);
+			name = EntityTypes.strings;
+			sourceTree = "<group>";
+		};
+		99399D7F1D1260B50083CA15 /* GovData.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99399D7E1D1260B50083CA15 /* en */,
+				99399D801D1260B80083CA15 /* cs */,
+			);
+			name = GovData.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		992A10DE1BBED5C9001D80FC /* Debug */ = {

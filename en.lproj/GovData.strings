@@ -1,0 +1,6 @@
+"100" = "API request error";
+"105" = "API request was throttled";
+"110" = "Requested content was not found";
+"115" = "Invalid request";
+"120" = "Data unavailable or missing";
+"125" = "Request was cancelled";
