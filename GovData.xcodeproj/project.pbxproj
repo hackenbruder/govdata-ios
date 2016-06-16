@@ -19,6 +19,7 @@
 		99399D7D1D1260B50083CA15 /* GovData.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99399D7F1D1260B50083CA15 /* GovData.strings */; };
 		99399D971D127A410083CA15 /* libGovData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A10D71BBED5C9001D80FC /* libGovData.a */; };
 		99399D981D127A650083CA15 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 996EBE671D1273B40001599B /* libPods-Tests.a */; };
+		99399D9F1D127F0A0083CA15 /* GovData.h in Headers */ = {isa = PBXBuildFile; fileRef = 992A10DA1BBED5C9001D80FC /* GovData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		994A743A1C665F5E00C1EC57 /* GDRUIAN.m in Sources */ = {isa = PBXBuildFile; fileRef = 994A74391C665F5E00C1EC57 /* GDRUIAN.m */; };
 		99647D301BC3FFC60033EDB1 /* GDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 99647D2F1BC3FFC60033EDB1 /* GDError.m */; };
 		9974BB0D1BD42B7A0084FF12 /* GDErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9974BB0C1BD42B7A0084FF12 /* GDErrorTests.m */; };
@@ -249,6 +250,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		99399D9B1D127EFE0083CA15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99399D9F1D127F0A0083CA15 /* GovData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		992A10D61BBED5C9001D80FC /* GovData */ = {
 			isa = PBXNativeTarget;
@@ -259,6 +271,7 @@
 				992A10D41BBED5C9001D80FC /* Frameworks */,
 				992A10D51BBED5C9001D80FC /* CopyFiles */,
 				50520669B6FB4F36D4DF4544 /* [CP] Copy Pods Resources */,
+				99399D9B1D127EFE0083CA15 /* Headers */,
 			);
 			buildRules = (
 			);

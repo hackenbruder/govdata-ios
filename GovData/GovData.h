@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "AFNetworking.h"
+#import <AFNetworking.h>
 
 #import "GDError.h"
 #import "GDEntity.h"
