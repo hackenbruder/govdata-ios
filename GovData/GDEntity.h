@@ -10,8 +10,7 @@
 @property (nonatomic, readonly, strong) const NSDictionary * registers;
 @property (nonatomic, readonly, strong) const NSString * number;
 @property (nonatomic, readonly, strong) const NSString * name;
-@property (nonatomic, readonly, strong) const NSString * type;
-@property (nonatomic, readonly, strong) const NSString * typeDescription;
+@property (nonatomic, readonly, strong) const NSNumber * type;
 @property (nonatomic, readonly, strong) const NSDate * foundedAt;
 @property (nonatomic, readonly, strong) const GDVAT * vat;
 @property (nonatomic, readonly, strong) const GDAddress * address;
@@ -21,6 +20,7 @@
 - (const GDVAT *)vat:(const GDError **) error;
 - (const GDAddress *)address:(const GDError **) error;
 
+- (const NSString *)typeDescription;
 - (BOOL)hasVAT;
 
 @end

@@ -154,8 +154,8 @@
 }
 
 - (void)test8HasType {
-	const NSString * s = [_standard type];
-	XCTAssertTrue([s isKindOfClass:[NSString class]] && [s length] > 0, "Missing type");
+	const NSNumber * n = [_standard type];
+	XCTAssertTrue([n isKindOfClass:[NSNumber class]] && n > 0, "Missing type");
 }
 
 - (void)test9HasTypeDescription {

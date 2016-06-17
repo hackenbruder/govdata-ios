@@ -9,8 +9,7 @@ extern NSString * const GDEntityTypeTable;
 	if(self) {
 		_number = [response objectForKey:@"number"];
 		_name = [response objectForKey:@"name"];
-		_type = [NSString stringWithFormat:@"%d", [[response objectForKey:@"type"] intValue]];
-		_typeDescription = NSLocalizedStringFromTable((NSString *)_type, GDEntityTypeTable, nil);
+		_type = [response objectForKey:@"type"];
 		_foundedAt = [GDHelpers createDate: [response objectForKey:@"founded_at"]];
 		
 		const NSNumber * lat = [response objectForKey:@"lat"];
@@ -27,6 +26,10 @@ extern NSString * const GDEntityTypeTable;
 
 - (BOOL)hasGeo {
 	return _geoStatus != GDAddressDataUnavailable;
+}
+
+- (const NSString *)typeDescription {
+	return [GDHelpers localizedString:[_type stringValue] table:GDEntityTypeTable];
 }
 
 + (const NSArray<const GDSearchResult *> *)createWithResponse:(id) response {

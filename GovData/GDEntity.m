@@ -10,10 +10,12 @@ NSString * const GDEntityTypeTable = @"GDEntityTypes";
 		_registers = [response objectForKey:@"registers"];
 		_number = [response objectForKey:@"number"];
 		_name = [response objectForKey:@"name"];
-		_type = [response objectForKey:@"legal_type_id"];
-		_typeDescription = NSLocalizedStringFromTable((NSString *)_type, GDEntityTypeTable, nil);
-		
 		_foundedAt = [GDHelpers createDateFromMsec: [response objectForKey:@"founded_at"]];
+		
+		NSString * type = [response objectForKey:@"legal_type_id"];
+		if(type != nil) {
+			_type = @([type intValue]);
+		}
 		
 		id vat = [response objectForKey:@"vat"];
 		if(vat != nil && [vat isKindOfClass:[NSDictionary class]] && [self hasVAT]) {
@@ -42,6 +44,10 @@ NSString * const GDEntityTypeTable = @"GDEntityTypes";
 		return nil;
 	}
 	return _address;
+}
+
+- (const NSString *)typeDescription {
+	return [GDHelpers localizedString:[_type stringValue] table:GDEntityTypeTable];
 }
 
 - (BOOL)hasVAT {
