@@ -2,11 +2,15 @@
 
 @implementation GDSearchResult
 
+extern NSString * const GDEntityTypeTable;
+
 - (id)initWithResponse:(id) response {
 	self = [super init];
 	if(self) {
 		_number = [response objectForKey:@"number"];
 		_name = [response objectForKey:@"name"];
+		_type = [NSString stringWithFormat:@"%d", [[response objectForKey:@"type"] intValue]];
+		_typeDescription = NSLocalizedStringFromTable((NSString *)_type, GDEntityTypeTable, nil);
 		_foundedAt = [GDHelpers createDate: [response objectForKey:@"founded_at"]];
 		
 		const NSNumber * lat = [response objectForKey:@"lat"];

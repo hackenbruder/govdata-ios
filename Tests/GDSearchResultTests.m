@@ -13,6 +13,7 @@
 	const NSDictionary * standard =
 	@{
 		@"number": @"123",
+		@"type": @100,
 		@"name": @"testing name",
 		@"founded_at": @725677200,
 		@"lat": @49.6590646,
@@ -42,6 +43,16 @@
 
 - (void)test5HasGeo {
 	XCTAssertTrue([_standard hasGeo] && [_standard geo].latitude != 0 && [_standard geo].longitude != 0, "Missing geo");
+}
+
+- (void)test6ReturnsType {
+	const NSString * s = [_standard type];
+	XCTAssertTrue([s isKindOfClass: [NSString class]] && [s length] > 0, "Missing type");
+}
+
+- (void)test7ReturnsTypeDescription {
+	const NSString * s = [_standard typeDescription];
+	XCTAssertTrue([s isKindOfClass: [NSString class]] && [s length] > 0, "Missing type description");
 }
 
 @end

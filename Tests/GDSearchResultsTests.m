@@ -17,11 +17,13 @@
 		@"data": @[
 			@{
 				@"number": @"123",
+				@"type": @100,
 				@"name": @"testing name",
 				@"founded_at": @725677200
 			},
 			@{
 				@"number": @"123",
+				@"type": @100,
 				@"name": @"testing name",
 				@"founded_at": @725677200
 			},
