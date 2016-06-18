@@ -1,4 +1,4 @@
-"100" = "Business";
+"100" = "Business entity";
 "101" = "Unincorporated natural person";
 "102" = "Incorporated natural person";
 "104" = "Incorporated private farmer";
@@ -90,7 +90,7 @@
 "733" = "Organizational unit of a unions and employers organization";
 "734" = "Organizational unit of organization for representing national interest in international non-government organizations";
 "736" = "Association branch";
-"741" = "Professional organization - professional chamber";
+"741" = "Professional organization, professional chamber";
 "745" = "Chamber excluding professional chambers";
 "751" = "Special-interest association of legal entities";
 "761" = "Hunting association";
