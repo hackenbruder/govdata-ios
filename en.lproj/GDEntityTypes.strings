@@ -2,8 +2,8 @@
 "101" = "Unincorporated natural person";
 "102" = "Incorporated natural person";
 "104" = "Incorporated private farmer";
-"105" = "Unincorporated natural person - freelancer";
-"106" = "Incorporated natural person - freelancer";
+"105" = "Unincorporated natural person, freelancer";
+"106" = "Incorporated natural person, freelancer";
 "107" = "Unincorporated natural person in agriculture";
 "108" = "Incorporated natural person in agriculture";
 "111" = "Public trading company";

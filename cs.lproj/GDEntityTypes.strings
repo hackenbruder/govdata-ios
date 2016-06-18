@@ -4,8 +4,8 @@
 "104" = "Samostatně hospodařící rolník zapsaný v obchodním rejstříku";
 "105" = "Fyzická osoba podnikající dle jiných zákonů než živnostenského a zákona o zemědělství nezapsaná v obchodním rejstříku";
 "106" = "Fyzická osoba podnikající dle jiných zákonů než živnostenského a zákona o zemědělství zapsaná v obchodním rejstříku";
-"107" = "Zemědělský podnikatel - fyzická osoba nezapsaná v obchodním rejstříku";
-"108" = "Zemědělský podnikatel - fyzická osoba zapsaná v obchodním rejstříku";
+"107" = "Zemědělský podnikatel, fyzická osoba nezapsaná v obchodním rejstříku";
+"108" = "Zemědělský podnikatel, fyzická osoba zapsaná v obchodním rejstříku";
 "111" = "Veřejná obchodní společnost";
 "112" = "Společnost s ručením omezeným";
 "113" = "Společnost komanditní";
@@ -95,7 +95,7 @@
 "751" = "Zájmové sdružení právnických osob";
 "761" = "Honební společenstvo";
 "771" = "Svazek obcí";
-"801" = "Obec nebo městská část hlavního města Prahy";
+"801" = "Obec, město nebo městská část";
 "804" = "Kraj";
 "805" = "Regionální rada regionu soudržnosti";
 "811" = "Městská část hlavního města Prahy";
