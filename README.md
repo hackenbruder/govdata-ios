@@ -4,6 +4,14 @@ Oficiální SDK pro iOS a OSX.
 
 [![Build Status](https://travis-ci.org/hackenbruder/govdata-ios.svg)](https://travis-ci.org/hackenbruder/govdata-ios)
 
+## GovData
+
+`GovData` poskytují vybraná OpenData prostřednictvím API a zjednodušují jejich integraci do aplikací pomocí SDK. Otevřená data, API, SDK a aplikace tvoří ekosystém a kvalitní aplikace mohou vznikat pouze ve fungujícím ekosystému. Naše SDK jsou pokryta testy a služby jsou vysoce dostupné.
+
+Poskytována jsou data ze živnostenského, obchodního a dalších rejstříků, včetně registru plátců daně z přidané hodnoty. Data jsou standardizována a je v nich možné vyhledávat.
+
+Vyzkoušejte si zdarma naši službu a SDK.
+
 ## Instalace
 ### CocoaPods
 
