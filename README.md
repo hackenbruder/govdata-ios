@@ -1,6 +1,8 @@
 # GovData iOS SDK
 
-Oficiální SDK pro iOS a OSX.
+[See English version](README.en.md)
+
+Oficiální SDK pro iOS a macOS.
 
 [![Build Status](https://travis-ci.org/hackenbruder/govdata-ios.svg)](https://travis-ci.org/hackenbruder/govdata-ios)
 
