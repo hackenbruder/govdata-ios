@@ -21,7 +21,7 @@ Install our SDK with standard command:
 	
 	pod install govdata
 
-For correct function of static library you need correct `Xcode` project configuration for `CocoaPods` including all correct paths to header files and correct build Targets configuration. Library is covered with automated test.
+For correct function of our static library you need use proper `Xcode` project configuration for `CocoaPods` including all correct paths to header files and correct build Targets configuration. Library is covered with automated test.
 
 Only dependency of our SDK is `AFNetworking` library.
 
@@ -72,7 +72,7 @@ Entity search using GPS coordinates and radius using `findEntitiesByGeo` method:
 
 ## Documentation
 
-Documentation SDK objects is in progress. Please explore available objects and their methods in [Tests](Tests/?ts=2).
+Documenting SDK objects is in progress. Please explore available objects and their methods in [Tests](Tests/?ts=2).
 
 ## License
 
