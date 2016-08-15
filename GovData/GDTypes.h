@@ -19,3 +19,9 @@ typedef NS_ENUM(NSInteger, GDAddressDataStatus) {
 	GDAddressDataInaccurate		= 205, //@"address data inaccurate"
 	GDAddressDataAccurate			= 210, //@"address data accurate"
 };
+
+typedef NS_ENUM(NSInteger, GDSearchResultsTypeEnum) {
+	GDSearchResultsInvalid		= 400,
+	GDSearchResultsEntities		= 405,
+	GDSearchResultsAddresses	= 410,
+};

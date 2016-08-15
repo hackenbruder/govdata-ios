@@ -108,4 +108,27 @@
 	}];
 }
 
+- (void)test5NameQueryResultsFound {
+	XCTestExpectation * expectation = [self expectationWithDescription:@"Returns an entity"];
+	
+	GDErrorResponse failure = ^(const GDError * error) {
+		XCTFail(@"%@", error.localizedDescription);
+	};
+	
+	GDSearchResponse success = ^(const GDSearchResults * response) {
+		XCTAssertNotNil(response, "Search succeeded");
+		[expectation fulfill];
+	};
+	
+	const NSString * name = @"ministerstvo";
+	NSURLSessionDataTask * task = [_govdata findEntitiesByName:name page:1 success: success failure: failure];
+	XCTAssertNotNil(task);
+	
+	[self waitForExpectationsWithTimeout:5 handler:^(NSError * error) {
+		if (error != nil) {
+			XCTFail(@"%@", error.localizedDescription);
+		}
+	}];
+}
+
 @end

@@ -1,6 +1,6 @@
-#import "GDSearchResult.h"
+#import "GDSearchResultEntity.h"
 
-@implementation GDSearchResult
+@implementation GDSearchResultEntity
 
 extern NSString * const GDEntityTypeTable;
 
@@ -32,14 +32,14 @@ extern NSString * const GDEntityTypeTable;
 	return [GDHelpers localizedString:[_type stringValue] table:GDEntityTypeTable];
 }
 
-+ (const NSArray<const GDSearchResult *> *)createWithResponse:(id) response {
-	NSMutableArray * accounts = [[NSMutableArray alloc] init];
++ (const NSArray<const GDSearchResultEntity *> *)createWithResponse:(id) response {
+	NSMutableArray * entities = [[NSMutableArray alloc] init];
 	for(int i = 0; i < [response count]; ++i) {
 		id searchResponse = [response objectAtIndex: i];
-		const GDSearchResult * account = [[GDSearchResult alloc] initWithResponse: searchResponse];
-		[accounts addObject: account];
+		const GDSearchResultEntity * entity = [[GDSearchResultEntity alloc] initWithResponse:searchResponse];
+		[entities addObject:entity];
 	}
-	return [accounts copy];
+	return [entities copy];
 }
 
 @end

@@ -4,7 +4,7 @@
 #import "GDHelpers.h"
 #import "GDTypes.h"
 
-@interface GDSearchResult : NSObject
+@interface GDSearchResultEntity : NSObject
 
 @property (nonatomic, readonly, strong) const NSString * number;
 @property (nonatomic, readonly, strong) const NSString * name;
@@ -18,6 +18,6 @@
 - (const NSString *)typeDescription;
 - (BOOL)hasGeo;
 
-+ (const NSArray<const GDSearchResult *> *)createWithResponse:(id) response;
++ (const NSArray<const GDSearchResultEntity *> *)createWithResponse:(id) response;
 
 @end

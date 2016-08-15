@@ -107,4 +107,18 @@
 	} failure: failure];
 }
 
+- (NSURLSessionDataTask *)findEntitiesByName:(const NSString *) name page:(int) page success:(GDSearchResponse) success failure:(GDErrorResponse) failure {
+	NSString * url = [self getURL: [NSString stringWithFormat:@"search/name"]];
+	NSURLComponents * components = [NSURLComponents componentsWithString:url];
+	components.queryItems =
+	@[
+		[NSURLQueryItem queryItemWithName:@"name" value:(NSString *)name],
+		[NSURLQueryItem queryItemWithName:@"page" value:[@(page) stringValue]]
+	];
+	
+	return [self get: [components.URL absoluteString] success:^(id response) {
+		success([[GDSearchResults alloc] initWithResponse: response page:page]);
+	} failure: failure];
+}
+
 @end

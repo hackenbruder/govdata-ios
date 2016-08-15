@@ -25,5 +25,6 @@ typedef void (^GDResponse)(id response);
 	
 - (NSURLSessionDataTask *)findEntityByNumber:(const NSString *) number success:(GDEntityResponse) success failure:(GDErrorResponse) failure;
 - (NSURLSessionDataTask *)findEntitiesByGeo:(const CLLocationCoordinate2D *) coords radius:(int) radius page:(int) page success:(GDSearchResponse) success failure:(GDErrorResponse) failure;
+- (NSURLSessionDataTask *)findEntitiesByName:(const NSString *) name page:(int) page success:(GDSearchResponse) success failure:(GDErrorResponse) failure;
 
 @end

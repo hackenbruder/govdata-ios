@@ -1,11 +1,11 @@
 #import <XCTest/XCTest.h>
-#import "GDSearchResult.h"
+#import "GDSearchResultEntity.h"
 
-@interface GDSearchResultTests : XCTestCase
-@property (nonatomic, strong) const GDSearchResult * standard;
+@interface GDSearchResultEntityTests : XCTestCase
+@property (nonatomic, strong) const GDSearchResultEntity * standard;
 @end
 
-@implementation GDSearchResultTests
+@implementation GDSearchResultEntityTests
 
 - (void)setUp {
 	[super setUp];
@@ -19,7 +19,7 @@
 		@"lat": @49.6590646,
 		@"lon": @13.819072
 	};
-	_standard = [[GDSearchResult alloc] initWithResponse: standard];
+	_standard = [[GDSearchResultEntity alloc] initWithResponse: standard];
 }
 
 - (void)test1ReturnsNumber {

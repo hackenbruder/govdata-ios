@@ -12,6 +12,7 @@
 	
 	const NSDictionary * standard =
 	@{
+		@"type": @405,
 		@"pages": @1,
 		@"total": @1,
 		@"data": @[
