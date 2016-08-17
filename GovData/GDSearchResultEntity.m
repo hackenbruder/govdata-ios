@@ -14,7 +14,7 @@ extern NSString * const GDEntityTypeTable;
 		
 		const NSNumber * lat = [response objectForKey:@"lat"];
 		const NSNumber * lon = [response objectForKey:@"lon"];
-		if(lat != nil && lon != nil) {
+		if(lat != NULL && lon != NULL) {
 			_geoStatus = GDAddressDataAccurate;
 			_geo = CLLocationCoordinate2DMake([lat doubleValue], [lon doubleValue]);
 		} else {
