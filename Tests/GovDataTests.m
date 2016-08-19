@@ -29,7 +29,7 @@
 	NSURLSessionDataTask * task = [_govdata findEntityByNumber:@"123" success: success failure: failure];
 	XCTAssertNotNil(task);
 	
-	[self waitForExpectationsWithTimeout:5 handler:^(NSError * error) {
+	[self waitForExpectationsWithTimeout:15 handler:^(NSError * error) {
 		if (error != nil) {
 			XCTFail(@"%@", error.localizedDescription);
 		}
@@ -51,7 +51,7 @@
 	NSURLSessionDataTask * task = [_govdata findEntityByNumber:@"00006947" success: success failure: failure];
 	XCTAssertNotNil(task);
 	
-	[self waitForExpectationsWithTimeout:5 handler:^(NSError * error) {
+	[self waitForExpectationsWithTimeout:15 handler:^(NSError * error) {
 		if (error != nil) {
 			XCTFail(@"%@", error.localizedDescription);
 		}
@@ -74,7 +74,7 @@
 	NSURLSessionDataTask * task = [_govdata findEntitiesByGeo:&coords radius:100 page:1 success: success failure: failure];
 	XCTAssertNotNil(task);
 	
-	[self waitForExpectationsWithTimeout:5 handler:^(NSError * error) {
+	[self waitForExpectationsWithTimeout:15 handler:^(NSError * error) {
 		if (error != nil) {
 			XCTFail(@"%@", error.localizedDescription);
 		}
@@ -101,7 +101,7 @@
 	
 	[task cancel];
 	
-	[self waitForExpectationsWithTimeout:5 handler:^(NSError * error) {
+	[self waitForExpectationsWithTimeout:15 handler:^(NSError * error) {
 		if (error != nil) {
 			XCTFail(@"%@", error.localizedDescription);
 		}
@@ -124,7 +124,7 @@
 	NSURLSessionDataTask * task = [_govdata findEntitiesByName:name page:1 success: success failure: failure];
 	XCTAssertNotNil(task);
 	
-	[self waitForExpectationsWithTimeout:5 handler:^(NSError * error) {
+	[self waitForExpectationsWithTimeout:15 handler:^(NSError * error) {
 		if (error != nil) {
 			XCTFail(@"%@", error.localizedDescription);
 		}
