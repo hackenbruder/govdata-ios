@@ -18,6 +18,8 @@
 		992A10DD1BBED5C9001D80FC /* GovData.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A10DC1BBED5C9001D80FC /* GovData.m */; };
 		992A10ED1BBED9C3001D80FC /* GovDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A10EC1BBED9C3001D80FC /* GovDataTests.m */; };
 		992C44AD1CA42CD8002EB42B /* GDRUIANTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C44AC1CA42CD8002EB42B /* GDRUIANTests.m */; };
+		9932BB171DDD766900C4B7B3 /* GovData.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99399D7F1D1260B50083CA15 /* GovData.strings */; };
+		9932BB181DDD767900C4B7B3 /* GDEntityTypes.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99399D781D125FA20083CA15 /* GDEntityTypes.strings */; };
 		99399D7D1D1260B50083CA15 /* GovData.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99399D7F1D1260B50083CA15 /* GovData.strings */; };
 		99399D9F1D127F0A0083CA15 /* GovData.h in Headers */ = {isa = PBXBuildFile; fileRef = 992A10DA1BBED5C9001D80FC /* GovData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99399DAA1D1382510083CA15 /* libGovData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 992A10D71BBED5C9001D80FC /* libGovData.a */; };
@@ -75,6 +77,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				9932BB181DDD767900C4B7B3 /* GDEntityTypes.strings in CopyFiles */,
+				9932BB171DDD766900C4B7B3 /* GovData.strings in CopyFiles */,
 				992A10DB1BBED5C9001D80FC /* GovData.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +322,7 @@
 		992A10CF1BBED5C9001D80FC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = govdata;
 				TargetAttributes = {
 					992A10D61BBED5C9001D80FC = {
@@ -326,6 +330,7 @@
 					};
 					992A10E91BBED9C3001D80FC = {
 						CreatedOnToolsVersion = 7.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -539,6 +544,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -548,13 +554,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -571,7 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
@@ -585,6 +594,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -594,13 +604,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -611,7 +624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
@@ -625,6 +638,7 @@
 			baseConfigurationReference = C638C100B20CFF56881F93F3 /* Pods-GovData.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -637,6 +651,7 @@
 			baseConfigurationReference = 052460F3A2BA9DCE526317E9 /* Pods-GovData.release.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -648,6 +663,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 39BC4ECC274D14828EA20052 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -660,6 +677,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A682B2A3B440F6C24F7C4D0A /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
