@@ -1,3 +1,4 @@
+#import "GDHelpers.h"
 #import "GDError.h"
 
 NSString * const GDErrorDomain = @"cz.govdata.GovData";
@@ -7,7 +8,7 @@ NSString * const GDStringsTable = @"GovData";
 
 - (id)initWithCode:(const GDErrorEnum) code {
 	NSString * key = [NSString stringWithFormat:@"%ld", (long)code];
-	NSString * description = NSLocalizedStringFromTable(key, GDStringsTable, nil);
+	NSString * description = (NSString *)[GDHelpers localizedString:key table:GDStringsTable];
 	NSDictionary * userInfo = @{NSLocalizedDescriptionKey: description};
 	
 	self = [super initWithDomain: GDErrorDomain code: code userInfo: userInfo];
@@ -16,7 +17,7 @@ NSString * const GDStringsTable = @"GovData";
 
 - (id)initWithMessage:(const GDErrorEnum) code message:(const NSString *) message {
 	NSString * key = [NSString stringWithFormat:@"%ld", (long)code];
-	NSString * description = NSLocalizedStringFromTable(key, GDStringsTable, nil);
+	NSString * description = (NSString *)[GDHelpers localizedString:key table:GDStringsTable];
 	NSDictionary * userInfo;
 	if(description) {
 		userInfo = @{NSLocalizedDescriptionKey: description};
