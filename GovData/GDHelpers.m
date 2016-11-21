@@ -16,7 +16,7 @@
 	NSString * path = [[NSBundle mainBundle] pathForResource:@"GovData" ofType:@"bundle"];
 	NSBundle * bundle = [NSBundle bundleWithPath:path];
 	if(bundle == nil) {
-		return key;
+		return NSLocalizedStringFromTable(key, table, nil);
 	}
 	return NSLocalizedStringFromTableInBundle(key, table, bundle, nil);
 }
