@@ -13,8 +13,7 @@
 }
 
 + (const NSString *)localizedString:(NSString *) key table:(NSString *) table {
-	NSString * path = [[NSBundle mainBundle] pathForResource:@"GovData" ofType:@"bundle"];
-	NSBundle * bundle = [NSBundle bundleWithPath:path];
+	NSBundle * bundle = [NSBundle bundleForClass:[self class]];
 	if(bundle == nil) {
 		return NSLocalizedStringFromTable(key, table, nil);
 	}
