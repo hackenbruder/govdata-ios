@@ -1,6 +1,7 @@
 language: objective-c
 osx_image: xcode8.2
 before_install:
+ - rvm get head
  - gem install cocoapods -v '1.2.0.beta.1'
 before_script: 
  - open -a Simulator
