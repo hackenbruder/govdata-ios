@@ -11,4 +11,4 @@ before_script:
  - xctool -version
  - xcodebuild -version -sdk
 script:
- - xctool -showTasks -destination "name=iPhone 6s Plus" -project GovData.xcodeproj -scheme GovData -sdk iphonesimulator run-tests
+ - xctool -showTasks -destination "id=EB1167CF-3545-44BC-9D95-482D286F6C66" -project GovData.xcodeproj -scheme GovData -sdk iphonesimulator run-tests
