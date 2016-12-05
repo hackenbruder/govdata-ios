@@ -4,11 +4,9 @@ before_install:
  - curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
  - rvm get head
  - gem install cocoapods -v '1.2.0.beta.1'
- - brew reinstall --HEAD xctool
 before_script: 
  - open -a Simulator
  - xcrun simctl list devices
- - xctool -version
  - xcodebuild -version -sdk
 script:
- - xctool -showTasks -destination "id=EB1167CF-3545-44BC-9D95-482D286F6C66" -project GovData.xcodeproj -scheme GovData -sdk iphonesimulator run-tests
+ - xcodebuild -workspace GovData.xcworkspace -scheme Tests -destination 'platform=iOS Simulator,name=iPhone 6s Plus,OS=10.2' -sdk iphonesimulator build test
