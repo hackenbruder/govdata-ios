@@ -9,4 +9,4 @@ before_script:
  - xcrun simctl list devices
  - xcodebuild -version -sdk
 script:
- - xcodebuild -workspace GovData.xcworkspace -scheme Tests -destination 'platform=iOS Simulator,name=iPhone 6s Plus,OS=10.2' -sdk iphonesimulator build test
+ - xcodebuild -workspace GovData.xcworkspace -scheme Tests -destination 'platform=iOS Simulator,id=EB1167CF-3545-44BC-9D95-482D286F6C66,OS=10.2' -sdk iphonesimulator build test
