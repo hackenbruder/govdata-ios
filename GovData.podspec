@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
 	s.author							= { 'Richard Hackenbruder' => 'hackenbruder@govdata.cz' }
 	s.source_files				= 'GovData/**/*.{h,m}'
 	s.public_header_files	= 'GovData/**/*.h'
+	s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 	s.framework						= 'SystemConfiguration'
 	s.requires_arc				= true
 	s.resource_bundles		= { 'GovData' => [ '*.lproj' ] }
